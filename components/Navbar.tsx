@@ -43,7 +43,7 @@ export default function Navbar() {
 
             </nav>
             {toggle && (
-                <div className="sticky min-h-[calc(100vh- 64px)] max-w-[95%] mx-auto grid items-center justify-center animate-fade-down animate-duration-500 
+                <div className="min-h-[calc(100vh-64px)] max-w-[95%] mx-auto grid items-center justify-center animate-fade-down animate-duration-500 
                 bg-[rgba(1,50,64,0.4)] dark:bg-[rgba(239,240,242,0.25)]">
                     <Link href="/" onClick={closeMenu} className="text-[#FFE9B7] dark:text-[#54BA6E] hover:font-extrabold hover:italic hover:text-[#54BA6E]">Home</Link>
                     <Link href="/work/ahmad-elmesery-portfolio" onClick={closeMenu} className="text-[#FFE9B7] dark:text-[#54BA6E] hover:font-extrabold hover:italic hover:text-[#54BA6E]">Work</Link>
