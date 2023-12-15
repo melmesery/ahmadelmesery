@@ -1,11 +1,12 @@
 'use client';
 
-
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
-import { getProfile } from "../sanity/sanity-utils.ts";
-import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { getProfile } from "../sanity/sanity-utils.ts";
+
+export const revalidate = 10;
 
 export default function Logo() {
   const { theme } = useTheme();
@@ -21,22 +22,15 @@ export default function Logo() {
         setDarkLogo(darkLogo);
       } catch (error) {
         console.error("Error fetching profile:", error);
-        // Handle error state if needed
       } finally {
         setLoading(false);
       }
     };
 
     fetchProfile();
-
-    // Cleanup function
-    return () => {
-      // Perform cleanup if necessary
-    };
-  }, []); // Empty dependency array means this effect runs once when the component mounts
+  }, []);
 
   if (loading) {
-    // You can replace this with a loading spinner or any other loading indicator
     return <p>Loading...</p>;
   }
 
