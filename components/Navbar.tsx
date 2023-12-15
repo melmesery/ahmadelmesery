@@ -43,10 +43,10 @@ export default function Navbar() {
 
             </nav>
             {toggle && (
-                <div className="min-h-[95vh] w-full grid items-center justify-center text-center mx-auto animate-fade-down animate-duration-500 
-                 bg-[rgba(0,0,0,0.5)] text-4xl
+                <div className="w-full mx-auto animate-fade-down animate-duration-500 
+                 bg-[rgba(0,0,0,0.5)] 
                  ">
-                    <div className="max-h-[70%] flex flex-col gap-16">
+                    <div className="flex flex-row items-center justify-around">
                         <Link href="/" onClick={closeMenu} className="text-[#FFE9B7] dark:text-[#54BA6E] hover:font-extrabold hover:italic hover:text-[#54BA6E]">Home</Link>
                         <Link href="/work/ahmad-elmesery-portfolio" onClick={closeMenu} className="text-[#FFE9B7] dark:text-[#54BA6E] hover:font-extrabold hover:italic hover:text-[#54BA6E]">Work</Link>
                         <Link href="/about" onClick={closeMenu} className="text-[#FFE9B7] dark:text-[#54BA6E] hover:font-extrabold hover:italic hover:text-[#54BA6E]">About</Link>
