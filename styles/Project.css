@@ -1,0 +1,51 @@
+.product_container {
+  @apply pt-5;
+}
+/* Product Hero Section */
+.product_video {
+  /* @apply max-w-[90%] sm:max-w-[80%] mx-auto; */
+}
+.product_creator {
+  @apply text-2xl mb-2 animate-fade-left 
+  animate-delay-500 animate-ease-in-out;
+}
+.product_head {
+  @apply text-4xl sm:text-5xl font-bold mb-5
+  animate-fade-left animate-delay-700 animate-ease-in-out;
+}
+.prod {
+  @apply animate-fade-up animate-delay-1000 animate-ease-in-out;
+}
+.product_content {
+  @apply py-10;
+}
+/* Credits Section */
+.credits_container {
+  @apply  dark:bg-[#013240];
+}
+/* .product_credits {
+  @apply 
+  max-w-[90%] sm:max-w-[80%] mx-auto py-10;
+} */
+.credits_headline {
+  @apply text-4xl font-bold mb-10 dark:underline
+      dark:decoration-yellow-400 ;
+}
+.credits_grid {
+  @apply grid grid-cols-4;
+}
+.credit {
+  @apply flex flex-col col-span-2 sm:col-span-1;
+}
+/* View Section */
+.view_projects {
+  @apply 
+  /* max-w-[90%] sm:max-w-[80%] mx-auto  */
+      min-h-[15vh] sm:min-h-[30vh]
+      grid items-center justify-center;
+}
+.view_button {
+  @apply text-2xl bg-red-400 px-8 py-3 rounded-full 
+      hover:transform hover:-translate-y-1 hover:odd:transition-transform 
+      hover:duration-300 hover:ease-in-out hover:opacity-80;
+}

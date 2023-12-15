@@ -1,0 +1,10 @@
+.switcher {
+  @apply flex items-center p-2 justify-center 
+  rounded-lg transition-colors;
+}
+.sun {
+  @apply h-5 w-5 text-orange-300;
+}
+.moon {
+  @apply h-5 w-5 text-slate-800;
+}

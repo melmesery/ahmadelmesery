@@ -1,0 +1,50 @@
+.reel_container {
+  @apply pt-5;
+}
+/* Video Section */
+/* .reel_video {
+  @apply max-w-[90%] sm:max-w-[80%] mx-auto;
+} */
+.reel_creator {
+  @apply text-2xl mb-2 
+  animate-fade-left animate-delay-500 animate-ease-in-out;
+}
+.reel_headline {
+  @apply text-4xl sm:text-5xl font-bold mb-5 
+  animate-fade-left animate-delay-700 animate-ease-in-out;
+}
+.reel {
+  @apply animate-fade-up animate-delay-1000 animate-ease-in-out;
+}
+.reel_content {
+  @apply py-10;
+}
+/* Details Section */
+.reel_details {
+  @apply dark:bg-[#013240];
+}
+.details {
+  @apply py-10;
+}
+.details_headline {
+  @apply text-4xl font-bold mb-10 dark:underline
+    dark:decoration-yellow-400 dark:decoration-wavy;
+}
+.detail {
+  @apply flex flex-row gap-2 sm:gap-5 mb-5;
+}
+.detail_time {
+  @apply text-sky-500 font-bold;
+}
+/* View Section */
+.view_projects {
+  @apply 
+  /* max-w-[90%] sm:max-w-[80%] mx-auto  */
+    min-h-[15vh] sm:min-h-[30vh]
+    grid items-center justify-center;
+}
+.view_button {
+  @apply text-2xl bg-red-400 px-8 py-3 rounded-full 
+    hover:transform hover:-translate-y-1 hover:odd:transition-transform 
+    hover:duration-300 hover:ease-in-out hover:opacity-80;
+}

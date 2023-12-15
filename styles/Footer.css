@@ -1,0 +1,7 @@
+.footer {
+  @layer lightMode darkMode;
+  @apply max-w-[95%] sm:max-w-[80%] mx-auto flex flex-row items-center justify-between 
+  bottom-0 w-full py-3 text-center 
+  border-t border-gray-300
+   dark:border-t dark:border-slate-700;
+}

@@ -1,0 +1,22 @@
+.hero_container {
+  @apply pt-40 pb-5 animate-fade-up animate-delay-500 animate-ease-in-out;
+}
+.hero {
+  @apply relative flex items-center justify-center 
+    hover:transform hover:-translate-y-5 hover:odd:transition-transform 
+    hover:duration-300 hover:ease-in-out;
+}
+.hero:hover .hero_title {
+  @apply opacity-100;
+}
+.hero:hover h1 {
+  @apply animate-fade-up animate-delay-100 animate-ease-in-out;
+}
+.hero_title {
+  @apply absolute top-0 left-0 transition-opacity duration-[0.3s] 
+  ease-in bg-[#333] opacity-0 w-full h-full text-center 
+  flex items-center justify-center text-white;
+}
+.hero_title h1 {
+  @apply text-3xl sm:text-5xl;
+}
