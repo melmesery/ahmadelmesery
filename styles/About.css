@@ -1,7 +1,6 @@
 .about_container {
   @apply static w-full 
   max-w-[90%]
-  sm:max-w-[90%] 
   lg:max-w-[1350px] mx-auto 
   pb-[100px]   
   lg:px-[65px];

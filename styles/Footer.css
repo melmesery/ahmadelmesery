@@ -3,11 +3,11 @@
 }
 
 .footer-container {
-  @apply max-w-[85%]
-  sm:max-w-[90%] 
+  @apply max-w-[90%] 
   lg:max-w-[1350px] 
   mx-auto 
   lg:px-[65px]
   py-[40px]
   flex flex-row items-center justify-between text-white dark:text-black;
 }
+git 
