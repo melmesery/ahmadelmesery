@@ -20,7 +20,7 @@ export default async function Summary() {
         Feel free to ask questions or contact for possible business inquiries{" "}
         {email}
       </p>
-      <div className="flex flex-row items-center mt-4git  gap-3 sm:gap-5">
+      <div className="flex flex-row items-center mt-4 gap-3 sm:gap-5">
         {linkedin && (
           <a href={linkedin} target="_blank" title={linkedin}>
             <FaLinkedinIn />
