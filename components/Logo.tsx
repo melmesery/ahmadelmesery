@@ -1,13 +1,24 @@
-'use client';
+"use client";
 
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
-import useLogo from "../hooks/useLogo.tsx";
+import { useEffect, useState } from "react";
+import { getProfile } from "../sanity/sanity-utils.ts";
 
 export default function Logo() {
   const { theme } = useTheme();
-  const { light, dark } = useLogo();
+  const [dark, setDark] = useState("");
+  const [light, setLight] = useState("");
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const { coloredLogo, darkLogo } = await getProfile();
+      setDark(darkLogo);
+      setLight(coloredLogo);
+    };
+    fetchData();
+  }, []);
 
   return (
     <>
@@ -28,3 +39,4 @@ export default function Logo() {
     </>
   );
 }
+
