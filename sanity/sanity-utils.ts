@@ -54,7 +54,7 @@ export async function getProfile(): Promise<Profile> {
       name,
       email,
       "image": image.asset->url,
-      "coloredLogo": coloredLogo.asset->url,
+      "lightLogo": lightLogo.asset->url,
       "darkLogo": darkLogo.asset->url,
       summary,
       mobile,

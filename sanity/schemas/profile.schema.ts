@@ -27,8 +27,8 @@ const profile = {
             ],
         },
         {
-            name: "coloredLogo",
-            title: "Colored Logo",
+            name: "lightLogo",
+            title: "Light Logo",
             type: "image",
             options: { hotspot: true },
             fields: [

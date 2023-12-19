@@ -6,7 +6,7 @@ export type Profile = {
     name: string;
     email: string;
     image: string;
-    coloredLogo: string;
+    lightLogo: string;
     darkLogo: string;
     summary: PortableTextBlock[];
     mobile: string,

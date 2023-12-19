@@ -6,7 +6,7 @@ import Toggler from "./Toggler.tsx";
 import Link from "next/link";
 import Logo from "./Logo.tsx";
 
-export default function MobileNav({ coloredLogo, darkLogo }: any) {
+export default function MobileNav({ lightLogo, darkLogo }: any) {
     const [toggle, setToggle] = useState(false);
     const menuToggle = () => {
         setToggle(!toggle);
@@ -17,7 +17,7 @@ export default function MobileNav({ coloredLogo, darkLogo }: any) {
     return (
         <>
             <div className="max-w-[90%] py-[15px] mx-auto lg:hidden flex items-center justify-between text-center">
-                <Logo coloredLogo={coloredLogo} darkLogo={darkLogo} />
+                <Logo lightLogo={lightLogo} darkLogo={darkLogo} />
                 <div className="flex flex-row items-center -mr-3">
                     <ThemeSwitcher />
                     <Toggler toggle={toggle} menuToggle={menuToggle} />

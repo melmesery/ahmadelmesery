@@ -1,17 +1,28 @@
-'use client';
+"use client";
 
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
-export default function Logo({ coloredLogo, darkLogo }: any) {
+export default function Logo({ lightLogo, darkLogo }: any) {
+  const [logoToggle, setLogoToggle] = useState(false)
   const { theme } = useTheme();
+
+  useEffect(() => {
+    if (theme === 'light') {
+      setLogoToggle(true);
+    } else {
+      setLogoToggle(false);
+    }
+  }, [theme]);
+
   return (
     <>
-      {coloredLogo && darkLogo ? (
+      {lightLogo && darkLogo ? (
         <Link href="/" className="cursor-pointer">
           <Image
-            src={theme === "light" ? coloredLogo : darkLogo}
+            src={logoToggle ? lightLogo : darkLogo}
             alt="Ahmad-Elmesery-logo"
             width={50}
             height={50}
