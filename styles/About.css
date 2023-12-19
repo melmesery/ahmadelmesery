@@ -4,8 +4,7 @@
   lg:max-w-[1350px] mx-auto 
   pb-[100px]   
   lg:px-[65px]
-  sm:min-h-[82vh]
-  lg:min-h-[100vh];
+  sm:min-h-[100vh] 
 }
 
 .about_headline {
@@ -13,7 +12,7 @@
     animate-fade-left animate-duration-[0.3s] animate-delay-0 animate-ease-in-out;
 }
 .about_data {
-  @apply grid grid-cols-2 gap-5 lg:gap-1 items-center md:justify-center;
+  @apply grid grid-cols-2 gap-5 sm:gap-10 lg:gap-1 items-center md:justify-center;
 }
 .about_profile {
   @apply w-full lg:w-[90%] col-span-2 md:col-span-1 

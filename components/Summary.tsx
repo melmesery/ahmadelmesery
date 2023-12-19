@@ -16,7 +16,7 @@ export default async function Summary() {
   return (
     <>
       <PortableText value={summary} /> <br />
-      <p>
+      <p className="mt-8">
         Feel free to ask questions or contact for possible business inquiries{" "}
         {email}
       </p>
