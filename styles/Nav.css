@@ -1,7 +1,6 @@
 .nav_container {
   @apply py-2 dark:bg-[#013240]
-  /* dark:border-b dark:border-slate-700; */;
-}
+ }
 .nav_logo {
   @apply font-bold text-inherit cursor-pointer;
 }

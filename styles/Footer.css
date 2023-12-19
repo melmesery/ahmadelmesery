@@ -1,5 +1,5 @@
 .footer {
-  @apply w-full text-center bg-[#013240] dark:bg-[#EFF0F2];
+  @apply absolute w-full text-center bg-[#013240] dark:bg-[#EFF0F2];
 }
 
 .footer-container {

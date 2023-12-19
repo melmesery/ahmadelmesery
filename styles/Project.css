@@ -43,8 +43,8 @@
 }
 /* View Section */
 .view_projects {
-  @apply /* max-w-[90%] sm:max-w-[80%] mx-auto  */
-      min-h-[15vh] sm:min-h-[30vh]
+  @apply 
+      min-h-[15vh] 
       grid items-center justify-center;
 }
 .view_button {
