@@ -1,7 +1,6 @@
 .about_container {
-  @apply 
-  static w-full 
-  max-w-[85%]
+  @apply static w-full 
+  max-w-[90%]
   sm:max-w-[90%] 
   lg:max-w-[1350px] mx-auto 
   pb-[100px]   
@@ -9,7 +8,7 @@
 }
 
 .about_headline {
-  @apply text-4xl sm:text-5xl my-[39px] font-bold 
+  @apply text-4xl sm:text-5xl mt-[17px] mb-[39px] font-bold 
     animate-fade-left animate-duration-[0.3s] animate-delay-0 animate-ease-in-out;
 }
 .about_data {
