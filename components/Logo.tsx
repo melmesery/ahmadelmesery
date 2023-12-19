@@ -3,41 +3,51 @@
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { getProfile } from "../sanity/sanity-utils.ts";
+// import { useEffect, useState } from "react";
+// import { getProfile } from "../sanity/sanity-utils.ts";
+import darkLogo from "../public/logo-dark.png";
+import lightLogo from "../public/logo-light.png";
 
-export const revalidate = 10;
+// export const revalidate = 10;
 
 export default function Logo() {
   const { theme } = useTheme();
-  const [coloredLogo, setColoredLogo] = useState("");
-  const [darkLogo, setDarkLogo] = useState("");
-  const [loading, setLoading] = useState(true);
+  // const [coloredLogo, setColoredLogo] = useState("");
+  // const [darkLogo, setDarkLogo] = useState("");
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchProfile = async () => {
-      try {
-        const { coloredLogo, darkLogo } = await getProfile();
-        setColoredLogo(coloredLogo);
-        setDarkLogo(darkLogo);
-      } catch (error) {
-        console.error("Error fetching profile:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchProfile = async () => {
+  //     try {
+  //       const { coloredLogo, darkLogo } = await getProfile();
+  //       setColoredLogo(coloredLogo);
+  //       setDarkLogo(darkLogo);
+  //     } catch (error) {
+  //       console.error("Error fetching profile:", error);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    fetchProfile();
-  }, []);
+  //   fetchProfile();
+  // }, []);
 
-  if (loading) {
-    return <p>Loading...</p>;
-  }
+  // if (loading) {
+  //   return <p>Loading...</p>;
+  // }
 
   return (
+    // <Link href="/" className="cursor-pointer">
+    //   <Image
+    //     src={theme === "dark" ? darkLogo : coloredLogo}
+    //     alt="Ahmad-Elmesery-logo"
+    //     width={50}
+    //     height={50}
+    //   />
+    // </Link>
     <Link href="/" className="cursor-pointer">
       <Image
-        src={theme === "dark" ? darkLogo : coloredLogo}
+        src={theme === "dark" ? darkLogo : lightLogo}
         alt="Ahmad-Elmesery-logo"
         width={50}
         height={50}
