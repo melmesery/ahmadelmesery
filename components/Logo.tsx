@@ -3,55 +3,28 @@
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
-// import { useEffect, useState } from "react";
-// import { getProfile } from "../sanity/sanity-utils.ts";
-import darkLogo from "../public/logo-dark.png";
-import lightLogo from "../public/logo-light.png";
-
-// export const revalidate = 10;
+import useLogo from "../hooks/useLogo.tsx";
 
 export default function Logo() {
   const { theme } = useTheme();
-   // const [coloredLogo, setColoredLogo] = useState("");
-  // const [darkLogo, setDarkLogo] = useState("");
-  // const [loading, setLoading] = useState(true);
-
-  // useEffect(() => {
-  //   const fetchProfile = async () => {
-  //     try {
-  //       const { coloredLogo, darkLogo } = await getProfile();
-  //       setColoredLogo(coloredLogo);
-  //       setDarkLogo(darkLogo);
-  //     } catch (error) {
-  //       console.error("Error fetching profile:", error);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   fetchProfile();
-  // }, []);
-
-  // if (loading) {
-  //   return <p>Loading...</p>;
-  // }
+  const { light, dark } = useLogo();
 
   return (
-    // <Link href="/" className="cursor-pointer">
-    //   <Image
-    //     src={theme === "dark" ? darkLogo : coloredLogo}
-    //     alt="Ahmad-Elmesery-logo"
-    //     width={50}
-    //     height={50}
-    //   />
-    // </Link>
-    <Link href="/" className="cursor-pointer">
-      <Image
-        src={theme === "light" ? lightLogo : darkLogo}
-        alt="Ahmad-Elmesery-logo"
-        width={50}
-        height={50}
-      />
-    </Link>
+    <>
+      {light && dark ? (
+        <Link href="/" className="cursor-pointer">
+          <Image
+            src={theme === "light" ? light : dark}
+            alt="Ahmad-Elmesery-logo"
+            width={50}
+            height={50}
+          />
+        </Link>
+      ) : (
+        <div className="animate-pulse">
+          <div className="rounded-full bg-slate-700 h-10 w-10" />
+        </div>
+      )}
+    </>
   );
 }
