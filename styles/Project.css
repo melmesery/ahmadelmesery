@@ -1,6 +1,5 @@
 .product_container {
-  @apply 
-  max-w-[90%] 
+  @apply max-w-[90%] 
   lg:max-w-[1350px] 
   mx-auto 
   lg:px-[65px]  pb-[50px];
@@ -10,11 +9,11 @@
   /* @apply max-w-[90%] sm:max-w-[80%] mx-auto; */
 }
 .product_creator {
-  @apply text-2xl mb-2 animate-fade-left 
+  @apply text-2xl mt-[17px] mb-[8px] animate-fade-left 
   animate-delay-500 animate-ease-in-out;
 }
 .product_head {
-  @apply text-4xl sm:text-5xl font-bold mt-[17px] mb-[39px]
+  @apply text-4xl sm:text-5xl font-bold mb-[20px]
   animate-fade-left animate-delay-700 animate-ease-in-out;
 }
 .prod {
