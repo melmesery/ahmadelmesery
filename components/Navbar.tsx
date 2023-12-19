@@ -33,7 +33,7 @@ export default function Navbar() {
                         <ThemeSwitcher />
                     </div>
                 </div>
-                <div className="max-w-[90%] bg-red-500g py-[15px] mx-auto lg:hidden flex items-center justify-between text-center">
+                <div className="max-w-[90%] py-[15px] mx-auto lg:hidden flex items-center justify-between text-center">
                     <Logo />
                     <div className="flex flex-row items-center -mr-3">
                         <ThemeSwitcher />

@@ -7,13 +7,13 @@ export default async function Work() {
   const projects = await getProjects();
 
   return (
-    <div className="max-w-[85%]
-    sm:max-w-[90%] 
+    <div className="
+    max-w-[90%] 
     lg:max-w-[1350px] 
     mx-auto 
     lg:px-[65px]  pb-[50px]">
       <h1
-        className="text-4xl sm:text-5xl font-bold my-[39px]
+        className="text-4xl sm:text-5xl font-bold mt-[17px] mb-[39px]
     animate-fade-left animate-duration-[0.5s] animate-ease-in-out"
       >
         Projects

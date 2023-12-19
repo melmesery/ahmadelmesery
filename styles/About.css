@@ -14,7 +14,7 @@
   @apply grid grid-cols-2 gap-5 lg:gap-1 items-center md:justify-center;
 }
 .about_profile {
-  @apply col-span-2 md:col-span-1 
+  @apply w-full lg:w-[90%] col-span-2 md:col-span-1 
   animate-fade-up animate-duration-[0.5s] animate-delay-0 animate-ease-in-out
   block mx-auto lg:mx-0 lg:mb-0;
 }
