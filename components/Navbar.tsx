@@ -3,6 +3,7 @@ import { getProfile } from "../sanity/sanity-utils.ts";
 import "../styles/MobileNav.css";
 import Logo from "./Logo.tsx";
 import ThemeSwitcher from "./ThemeSwitcher.tsx";
+import MobileNav from "./MobileNav.tsx";
 
 export const revalidate = 10;
 
@@ -23,8 +24,7 @@ export default async function Navbar() {
                         <ThemeSwitcher />
                     </div>
                 </div>
-
-              
+                <MobileNav coloredLogo={coloredLogo} darkLogo={darkLogo}/>
             </nav>
         </>
     );
