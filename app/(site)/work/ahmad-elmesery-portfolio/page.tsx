@@ -11,8 +11,7 @@ export default async function Work() {
     max-w-[90%] 
     lg:max-w-[1350px] 
     mx-auto 
-    lg:px-[65px]  pb-[50px]
-    min-h-[100vh]
+    lg:px-[65px]  pb-[50px] 
      ">
       <h1
         className="text-4xl sm:text-5xl font-bold mt-[17px] mb-[39px]
