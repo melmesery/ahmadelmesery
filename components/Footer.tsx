@@ -12,13 +12,13 @@ import { getProfile } from "../sanity/sanity-utils.ts";
 export const revalidate = 10;
 
 export default async function Footer() {
-  const { linkedin, facebook, behance, instagram, youtube, whatsapp } =
+  // const { linkedin, facebook, behance, instagram, youtube, whatsapp } =
     await getProfile();
   return (
     <div className="footer">
       <div className="footer-container">
         <p className="mb-0 text-sm sm:text-base">Ahmad Elmesery &copy; {new Date().getFullYear()}</p>
-        <div className="flex flex-row items-center justify-center gap-3 sm:gap-5">
+        {/* <div className="flex flex-row items-center justify-center gap-3 sm:gap-5">
           {linkedin && (
             <a href={linkedin} target="_blank" title={linkedin}>
               <FaLinkedinIn />
@@ -53,7 +53,8 @@ export default async function Footer() {
               <FaInstagram />
             </a>
           )}
-        </div></div>
+        </div> */}
+      </div>
     </div>
   );
 }

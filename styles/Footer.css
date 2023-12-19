@@ -1,5 +1,5 @@
 .footer {
-  @apply w-full bg-[#013240] dark:bg-[#EFF0F2];
+  @apply w-full text-center bg-[#013240] dark:bg-[#EFF0F2];
 }
 
 .footer-container {
@@ -8,5 +8,6 @@
   mx-auto 
   lg:px-[65px]
   py-[40px]
-  flex flex-row items-center justify-between text-white dark:text-black;
+  /* flex flex-row items-center justify-between */
+   text-white dark:text-black;
 } 

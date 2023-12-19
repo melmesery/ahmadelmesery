@@ -42,16 +42,7 @@ export default function Navbar() {
                 </div>
 
             </nav>
-            {toggle && (
-                // <div className="w-full mx-auto animate-fade-down animate-duration-500 
-                //  bg-[rgba(0,0,0,0.5)] 
-                //  ">
-                //     <div className="flex flex-row items-center justify-around">
-                //         <Link href="/" onClick={closeMenu} className="text-[#FFE9B7] dark:text-[#54BA6E] hover:font-extrabold hover:italic hover:text-[#54BA6E]">Home</Link>
-                //         <Link href="/work/ahmad-elmesery-portfolio" onClick={closeMenu} className="text-[#FFE9B7] dark:text-[#54BA6E] hover:font-extrabold hover:italic hover:text-[#54BA6E]">Work</Link>
-                //         <Link href="/about" onClick={closeMenu} className="text-[#FFE9B7] dark:text-[#54BA6E] hover:font-extrabold hover:italic hover:text-[#54BA6E]">About</Link>
-                //     </div>
-                // </div>
+            {toggle && ( 
                 <div className="absolute top-20 z-50  w-full min-h-[30vh] dark:bg-[#013240] bg-[#EFF0F2] animate-fade-down">
                     <Link href="/" onClick={closeMenu} className="min-h-[10vh] grid items-center justify-center dark:text-[#FFE9B7] text-[#54BA6E] hover:font-extrabold hover:italic hover:text-[#54BA6E]">Home</Link>
                     <Link href="/work/ahmad-elmesery-portfolio" onClick={closeMenu} className="min-h-[10vh] grid items-center justify-center dark:text-[#FFE9B7] text-[#54BA6E] hover:font-extrabold hover:italic hover:text-[#54BA6E]">Work</Link>
