@@ -33,7 +33,7 @@ export default function Logo() {
         </Link>
       ) : (
         <div className="animate-pulse">
-          <div className="rounded-full bg-slate-700 h-10 w-10" />
+          <div className="rounded-tl-lg rounded-bl-lg rounded-br-lg bg-slate-700 h-12 w-12" />
         </div>
       )}
     </>
