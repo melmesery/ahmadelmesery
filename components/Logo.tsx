@@ -1,31 +1,17 @@
-"use client";
+'use client';
 
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { getProfile } from "../sanity/sanity-utils.ts";
 
-export default function Logo() {
+export default function Logo({ coloredLogo, darkLogo }: any) {
   const { theme } = useTheme();
-  const [dark, setDark] = useState("");
-  const [light, setLight] = useState("");
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const { coloredLogo, darkLogo } = await getProfile();
-      setDark(darkLogo);
-      setLight(coloredLogo);
-    };
-    fetchData();
-  }, []);
-
   return (
     <>
-      {light && dark ? (
+      {coloredLogo && darkLogo ? (
         <Link href="/" className="cursor-pointer">
           <Image
-            src={theme === "light" ? light : dark}
+            src={theme === "light" ? coloredLogo : darkLogo}
             alt="Ahmad-Elmesery-logo"
             width={50}
             height={50}
