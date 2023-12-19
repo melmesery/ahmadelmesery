@@ -12,7 +12,7 @@ import lightLogo from "../public/logo-light.png";
 
 export default function Logo() {
   const { theme } = useTheme();
-  // const [coloredLogo, setColoredLogo] = useState("");
+   // const [coloredLogo, setColoredLogo] = useState("");
   // const [darkLogo, setDarkLogo] = useState("");
   // const [loading, setLoading] = useState(true);
 
@@ -47,7 +47,7 @@ export default function Logo() {
     // </Link>
     <Link href="/" className="cursor-pointer">
       <Image
-        src={theme === "dark" ? darkLogo : lightLogo}
+        src={theme === "light" ? lightLogo : darkLogo}
         alt="Ahmad-Elmesery-logo"
         width={50}
         height={50}
