@@ -1,7 +1,13 @@
 .footer {
-  @layer lightMode darkMode;
-  @apply max-w-[95%] sm:max-w-[80%] mx-auto flex flex-row items-center justify-between 
-  bottom-0 w-full py-3 text-center 
-  border-t border-gray-300
-   dark:border-t dark:border-slate-700;
+  @apply w-full bg-[#013240] dark:bg-[#EFF0F2];
+}
+
+.footer-container {
+  @apply max-w-[85%]
+  sm:max-w-[90%] 
+  lg:max-w-[1350px] 
+  mx-auto 
+  lg:px-[65px]
+  py-[40px]
+  flex flex-row items-center justify-between text-white dark:text-black;
 }

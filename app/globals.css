@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  @apply max-w-[90%] sm:max-w-[80%] mx-auto dark:bg-[#013240] bg-[#EFF0F2];
-} */
-
-
 ::-webkit-scrollbar {
   width: 10px;
   height: 4px;
@@ -24,11 +19,13 @@
 }
 
 body {
-  @apply lightMode darkMode ;
+  @apply lightMode darkMode;
 }
 
 main {
-  @apply lightMode darkMode max-w-[95%] sm:max-w-[80%] mx-auto dark:bg-[#013240] bg-[#EFF0F2];
+  @apply lightMode darkMode 
+  /* w-full max-w-[1350px] sm:max-w-[80%] mx-auto */
+   dark:bg-[#013240] bg-[#EFF0F2];
 }
 
 /****** Home Page ******/
@@ -60,20 +57,15 @@ main {
 } */
 /* Projects */
 .projects_container {
-  @apply grid grid-cols-1 sm:grid-cols-2 gap-y-3 sm:gap-5;
+  @apply grid grid-cols-2 gap-5;
 }
 .project {
-  @apply relative flex items-center justify-center 
-  hover:transform hover:-translate-y-1 sm:hover:-translate-y-2  
-  hover:duration-300 hover:ease-in-out;
-}
-.project:nth-child(even) {
-  @apply animate-fade-left 
-  animate-delay-1000 animate-ease-in-out;
-}
-.project:nth-child(odd) {
-  @apply animate-fade-right 
-  animate-delay-1000 animate-ease-in-out;
+  @apply 
+  relative flex items-center justify-center
+  hover:transform hover:-translate-y-1 
+  sm:hover:-translate-y-2  
+  hover:duration-100
+  hover:ease-in-out;
 }
 
 .project_gif {
@@ -89,13 +81,15 @@ main {
   @apply opacity-80;
 }
 .project:hover h1 {
-  @apply animate-fade-up;
+  @apply animate-fade-up animate-duration-[0.3s] animate-delay-0;
 }
 .project_title {
-  @apply absolute top-0 left-0 transition-opacity duration-[0.3s] 
-    ease-in bg-[#333] opacity-0 w-full h-full text-center 
+  @apply absolute top-0 left-0 
+  /* transition-opacity duration-[0.3s] 
+    ease-in  */
+    bg-[#333] opacity-0 w-full h-full text-center 
     flex items-center justify-center text-white;
 }
-.project_title h1 {
-  @apply text-3xl;
-}
+/* .project_title h1 {
+  @apply text-xl;
+} */

@@ -24,7 +24,8 @@ const Images = ({ project }: any) => {
     >
       {show && (
         <>
-          <div className="w-full grid grid-col-1 sm:grid-cols-2 gap-1 mb-1 items-center justify-between">
+          {/* <div className="grid grid-col-1 sm:grid-cols-2 gap-1 mb-1 items-center justify-between"> */}
+          <div className="grid xs:grid-cols-2 grid-cols-1 gap-1 mb-1 items-center justify-between">
             <Image
               src={mediumImages[0]}
               alt={name}
@@ -40,7 +41,8 @@ const Images = ({ project }: any) => {
               className="animate-fade-left animate-delay-500 animate-ease-in-out"
             />
           </div>
-          <div className="w-full grid grid-col-1 sm:grid-cols-3 gap-1 mb-1 items-center justify-between">
+          {/* <div className="grid grid-col-1 sm:grid-cols-3 gap-1 mb-1 items-center justify-between"> */}
+          <div className="grid xs:grid-cols-3 grid-cols-1 gap-1 mb-1 items-center justify-between">
             <Image
               src={smallImages[0]}
               alt={name}

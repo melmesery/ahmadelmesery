@@ -21,7 +21,7 @@ export default function Navbar() {
     return (
         <>
             <nav className="">
-                <div className="hidden max-w-[80%] mx-auto md:flex items-center justify-between py-2">
+                <div className="hidden max-w-[1350px] mx-auto py-[30px] px-[65px] lg:flex items-center justify-between">
                     <Logo />
                     <div className="flex flex-row items-center gap-5">
                         <Link href="/" onClick={closeMenu} className="text-[#54BA6E] dark:text-[#FFE9B7] hover:text-[#DD4C39] 
@@ -33,12 +33,12 @@ export default function Navbar() {
                         <ThemeSwitcher />
                     </div>
                 </div>
-                <div className="max-w-[100%] sm:max-w-[80%] mx-auto md:hidden flex items-center justify-between text-center py-2">
-                    <div className="flex flex-row items-center gap-2">
-                        <Toggler toggle={toggle} menuToggle={menuToggle} />
-                        <Logo />
+                <div className="max-w-[85%] sm:max-w-[90%] py-[15px] mx-auto lg:hidden flex items-center justify-between text-center">
+                    <Logo />
+                    <div className="flex flex-row items-center -mr-3">
+                        <ThemeSwitcher />
+                        <Toggler toggle={toggle} menuToggle={menuToggle}/>
                     </div>
-                    <ThemeSwitcher />
                 </div>
 
             </nav>
