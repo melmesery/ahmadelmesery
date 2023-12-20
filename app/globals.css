@@ -32,10 +32,8 @@ main {
 }
 .project {
   @apply relative flex items-center justify-center
-  hover:transform hover:-translate-y-1 
-  sm:hover:-translate-y-2  
-  hover:duration-100
-  hover:ease-in-out;
+  hover:transform hover:-translate-y-2 
+   hover:ease-in-out;
 }
 
 .project_gif {
