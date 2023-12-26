@@ -24,7 +24,9 @@ export default function MobileNav({ lightLogo, darkLogo }: any) {
                 </div>
             </div>
             {toggle && (
-                <div className="absolute top-20 z-50  w-full min-h-[30vh] dark:bg-[#013240] bg-[#EFF0F2] animate-fade-down">
+                <div className="absolute top-20 z-50  w-full min-h-[30vh] dark:bg-[#013240] bg-[#EFF0F2] 
+                animate-fade-down animate-once animate-duration-[0.1s] animate-delay-[0.2s]                
+                ">
                     <Link
                         href="/"
                         onClick={closeMenu}

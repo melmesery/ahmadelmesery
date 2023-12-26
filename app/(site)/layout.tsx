@@ -6,6 +6,7 @@ import { Montserrat as FONT } from "next/font/google";
 import Navbar from "../../components/Navbar.tsx";
 import "../globals.css";
 import Providers from "./providers.tsx";
+import 'animate.css';
 
 const font = FONT({
   subsets: ["latin"],

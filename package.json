@@ -13,6 +13,7 @@
     "@nextui-org/react": "^2.2.9",
     "@portabletext/react": "^3.0.11",
     "@sanity/vision": "^3.21.1",
+    "animate.css": "^4.1.1",
     "framer-motion": "^10.16.16",
     "next": "14.0.4",
     "next-sanity": "^7.0.3",
