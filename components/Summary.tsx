@@ -22,17 +22,17 @@ export default async function Summary() {
       </p>
       <div className="flex flex-row items-center mt-4 gap-3 sm:gap-5">
         {linkedin && (
-          <a href={linkedin} target="_blank" title={linkedin}>
+          <a href={linkedin} target="_blank" title="View Ahmad Linkedin">
             <FaLinkedinIn />
           </a>
         )}
         {facebook && (
-          <a href={facebook} target="_blank" title={facebook}>
+          <a href={facebook} target="_blank" title="Visit Ahmad Facebook account">
             <FaFacebookF />
           </a>
         )}
         {behance && (
-          <a href={behance} target="_blank" title={behance}>
+          <a href={behance} target="_blank" title="View Ahmad Behance">
             <FaBehance />
           </a>
         )}
@@ -51,7 +51,7 @@ export default async function Summary() {
           </a>
         )}
         {instagram && (
-          <a href={instagram} target="_blank" title={instagram}>
+          <a href={instagram} target="_blank" title="View Ahmad Instagram">
             <FaInstagram />
           </a>
         )}

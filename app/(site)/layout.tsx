@@ -1,12 +1,11 @@
 import Footer from "@/components/Footer.tsx";
 import ScrollTop from "@/components/ScrollTop.tsx";
 import type { Metadata } from "next";
-// import { Magra as FONT } from "next/font/google";
-// import { Barlow as FONT } from "next/font/google";
 import { Montserrat as FONT } from "next/font/google";
+// import { Padauk as FONT } from "next/font/google";
+import Navbar from "../../components/Navbar.tsx";
 import "../globals.css";
 import Providers from "./providers.tsx";
-import Navbar from "../../components/Navbar.tsx";
 
 const font = FONT({
   subsets: ["latin"],

@@ -48,7 +48,7 @@
       grid items-center justify-center;
 }
 .view_button {
-  @apply text-2xl bg-red-400 px-8 py-3 rounded-full 
+  @apply sm:text-2xl bg-red-400 px-8 py-3 rounded-full 
       hover:transform hover:-translate-y-1 hover:odd:transition-transform 
       hover:duration-300 hover:ease-in-out hover:opacity-80;
 }
