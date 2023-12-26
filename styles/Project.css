@@ -5,21 +5,18 @@
   lg:px-[65px]  pb-[50px];
 }
 /* Product Hero Section */
-.product_video {
-  /* @apply max-w-[90%] sm:max-w-[80%] mx-auto; */
-}
 .product_creator {
-  @apply text-2xl mt-[17px] mb-[8px] animate-fade-left 
-  animate-delay-500 animate-ease-in-out;
+  @apply text-2xl mt-[17px] mb-[8px] 
+  animate-fade-left animate-duration-[0.5s] animate-delay-0 animate-ease-in-out;
 }
 .product_head {
   @apply text-4xl sm:text-5xl font-bold mb-[20px]
-  animate-fade-left animate-delay-700 animate-ease-in-out;
+animate-fade-left animate-duration-[0.5s] animate-delay-0 animate-ease-in-out;
 }
-.prod {
-  @apply animate-fade-up 
-  /* animate-delay-1000 animate-ease-in-out; */;
-}
+/* .prod {
+  @apply 
+  animate-fade-up animate-duration-[0.5s] animate-delay-0 animate-ease-in-out;
+}  */
 .product_content {
   @apply py-10;
 }
@@ -43,8 +40,7 @@
 }
 /* View Section */
 .view_projects {
-  @apply 
-      min-h-[15vh] 
+  @apply min-h-[15vh] 
       grid items-center justify-center;
 }
 .view_button {

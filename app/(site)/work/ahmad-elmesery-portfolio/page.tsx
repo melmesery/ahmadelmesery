@@ -13,12 +13,6 @@ export default async function Work() {
     mx-auto 
     lg:px-[65px]  py-[50px] 
      ">
-      {/* <h1
-        className="text-4xl sm:text-5xl font-bold mt-[17px] mb-[39px]
-    animate-fade-left animate-duration-[0.5s] animate-ease-in-out"
-      >
-        Projects
-      </h1> */}
       <Projects projects={projects} />
     </div>
   );
