@@ -24,13 +24,11 @@ animate-fade-left animate-duration-[0.5s] animate-delay-0 animate-ease-in-out;
 .credits_container {
   @apply dark:bg-[#013240];
 }
-/* .product_credits {
-  @apply 
-  max-w-[90%] sm:max-w-[80%] mx-auto py-10;
-} */
+.product_credits {
+  @apply py-10;
+}
 .credits_headline {
-  @apply text-4xl font-bold mb-10 dark:underline
-      dark:decoration-yellow-400;
+  @apply text-3xl font-bold mb-7 text-orange-600;
 }
 .credits_grid {
   @apply grid grid-cols-4;

@@ -10,7 +10,7 @@ export default function Projects({ projects }: any) {
         projects.map((project: any) => (
           <Link
             key={project._id}
-            href={`project/${project.slug}`}
+            href={`work/project/${project.slug}`}
             className="project"
           >
             <>

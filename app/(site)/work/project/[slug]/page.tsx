@@ -16,7 +16,7 @@ export default async function ProjectPage({ params }: Props) {
       <Team project={project} />
       <Images project={project} />
       <section className="view_projects">
-        <Link href="/work/ahmad-elmesery-portfolio" className="view_button">
+        <Link href="/" className="view_button">
           View more projects
         </Link>
       </section>

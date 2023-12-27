@@ -26,7 +26,7 @@ export default async function page() {
                     </div>
                     <ReelDetails />
                     <section className="view_projects">
-                        <Link href="/work/ahmad-elmesery-portfolio" className="view_button">
+                        <Link href="/" className="view_button">
                             View more projects
                         </Link>
                     </section>
