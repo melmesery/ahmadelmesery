@@ -45,7 +45,7 @@ export default function MobileNav({ lightLogo, darkLogo, url, publish }: any) {
                     </Link>
                     {url && publish && (
                         <Link
-                            href="reel"
+                            href="/reel"
                             onClick={closeMenu}
                             className="min-h-[10vh] border-b-[0.1px] dark:border-gray-700 grid items-center justify-center dark:hover:bg-gray-800 hover:bg-slate-200 hover:border-b-[0.3px] dark:text-[#FFE9B7] text-[#54BA6E] hover:font-extrabold hover:italic hover:text-[#54BA6E]"
                         >
