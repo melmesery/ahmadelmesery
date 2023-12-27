@@ -1,8 +1,8 @@
 import Projects from "@/components/Projects.tsx";
 import { getProjects, getReel } from "@/sanity/sanity-utils.ts";
+import "@/styles/Reel.css";
 import Image from "next/image";
 import Link from "next/link";
-import "@/styles/Reel.css";
 
 export const revalidate = 10;
 

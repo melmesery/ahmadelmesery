@@ -30,6 +30,14 @@ export default async function Navbar() {
             >
               Work
             </Link>
+
+            <Link
+              href="/about"
+              className="text-[#54BA6E] dark:text-[#FFE9B7] hover:text-[#DD4C39] 
+                    hover:font-extrabold hover:italic dark:hover:text-[#54BA6E]"
+            >
+              About
+            </Link>
             {url && publish && (
               <Link
                 href="/reel"
@@ -39,13 +47,6 @@ export default async function Navbar() {
                 Reel
               </Link>
             )}
-            <Link
-              href="/about"
-              className="text-[#54BA6E] dark:text-[#FFE9B7] hover:text-[#DD4C39] 
-                    hover:font-extrabold hover:italic dark:hover:text-[#54BA6E]"
-            >
-              About
-            </Link>
             <ThemeSwitcher />
           </div>
         </div>
