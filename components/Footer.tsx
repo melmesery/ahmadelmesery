@@ -12,28 +12,29 @@ import "../styles/Footer.css";
 export const revalidate = 10;
 
 export default async function Footer() {
-  const { linkedin, facebook, behance, instagram, youtube, whatsapp } = await getProfile();
+  const { linkedin, facebook, behance, instagram, youtube, whatsapp } =
+    await getProfile();
   return (
     <div className="footer">
       <div className="footer-container">
-        <div className="flex flex-row items-center justify-center gap-3">
+        <div className="flex flex-row items-center justify-center gap-3 sm:gap-5">
           {linkedin && (
-            <a href={linkedin} target="_blank" title="View Ahmad Linkedin" className="social">
+            <a href={linkedin} target="_blank" className="social">
               <FaLinkedinIn />
             </a>
           )}
           {facebook && (
-            <a href={facebook} target="_blank" title="Visit Ahmad Facebook account" className="social">
+            <a href={facebook} target="_blank" className="social">
               <FaFacebookF />
             </a>
           )}
           {behance && (
-            <a href={behance} target="_blank" title="View Ahmad Behance" className="social">
+            <a href={behance} target="_blank" className="social">
               <FaBehance />
             </a>
           )}
           {youtube && (
-            <a href={youtube} target="_blank" title={youtube} className="social">
+            <a href={youtube} target="_blank" className="social">
               <FaYoutube />
             </a>
           )}
@@ -41,13 +42,17 @@ export default async function Footer() {
             <a
               href={`https://wa.me/2${whatsapp}`}
               target="_blank"
-              title={whatsapp} className="social"
+              className="social"
             >
               <FaWhatsapp />
             </a>
           )}
           {instagram && (
-            <a href={instagram} target="_blank" title="View Ahmad Instagram" className="social">
+            <a
+              href={instagram}
+              target="_blank" 
+              className="social"
+            >
               <FaInstagram />
             </a>
           )}
