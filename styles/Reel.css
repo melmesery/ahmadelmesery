@@ -20,9 +20,9 @@
   transform duration-[0.3s] hover:-translate-y-2 sm:hover:-translate-y-3 ease-in-out;
 }
 .reel_link:hover .reel_name {
-  @apply text-4xl sm:text-5xl font-bold mb-[20px] 
+  @apply text-base sm:text-5xl font-bold mb-[20px] 
   animate-fade-up animate-duration-[0.3s] animate-delay-0;
-}
+} 
 /* Details Section */
 .reel_details {
   @apply dark:bg-[#013240];

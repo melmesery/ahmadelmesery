@@ -19,7 +19,7 @@ export default async function Work() {
      "
     >
       {url && publish && (
-        <Link href="/reel" className="relative reel_link mb-2 sm:mb-5">
+        <Link href="/reel" className="relative reel_link mb-3 sm:mb-5">
           <>
             <Image src={image} width={1900} height={900} alt={name} />
             <div className="absolute w-full h-full top-0 left-0 opacity-0 bg-[#333] grid items-center justify-center hover:z-50 hover:opacity-75">
