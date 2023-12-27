@@ -3,6 +3,7 @@ import { PortableTextBlock } from 'sanity';
 export type Reel = {
     _id: string;
     createdAt: Date;
+    publish: boolean;
     name: string;
     slug: string;
     image: string;

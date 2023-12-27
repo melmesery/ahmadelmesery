@@ -4,6 +4,11 @@ const reel = {
     type: "document",
     fields: [
         {
+            name: "publish",
+            title: "Publish",
+            type: "boolean"
+        },
+        {
             name: "name",
             title: "Name",
             type: "string",

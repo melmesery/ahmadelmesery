@@ -34,14 +34,14 @@ main {
   @apply relative flex items-center justify-center
   transform duration-[0.3s] hover:-translate-y-2 sm:hover:-translate-y-3 ease-in-out;
 }
-.project_gif {
-  @apply hidden;
+.project_gif_img {
+  @apply relative;
+}
+.project_img {
+  @apply absolute top-0;
 }
 .project:hover .project_img {
   @apply hidden;
-}
-.project:hover .project_gif {
-  @apply flex;
 }
 .project:hover .project_title {
   @apply opacity-80;

@@ -1,4 +1,5 @@
 import { getReel } from "../sanity/sanity-utils.ts";
+import "../styles/Reel.css";
 
 export const revalidate = 10;
 

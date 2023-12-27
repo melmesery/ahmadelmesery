@@ -13,25 +13,27 @@ export default function Projects({ projects }: any) {
             href={`project/${project.slug}`}
             className="project"
           >
-            <div>
-              <Image
-                src={project.gif}
-                alt={project.name}
-                width={1960}
-                height={1080}
-                className="project_gif"
-              />
-              <Image
-                src={project.mainImage}
-                alt={project.name}
-                width={1960}
-                height={1080}
-                className="project_img"
-              />
+            <>
+              <div className="project_gif_img"> 
+                <Image
+                  src={project.gif}
+                  alt={project.name}
+                  width={1960}
+                  height={1080}
+                  className="project_gif"
+                />
+                <Image
+                  src={project.mainImage}
+                  alt={project.name}
+                  width={1960}
+                  height={1080}
+                  className="project_img"
+                />
+              </div>
               <div className="project_title">
                 <h1>{project.name}</h1>
               </div>
-            </div>
+            </>
           </Link>
         ))}
     </div>

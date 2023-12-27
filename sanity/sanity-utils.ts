@@ -73,6 +73,7 @@ export async function getReel(): Promise<Reel> {
     groq`*[_type == "reel"][0]{
       _id,
       _createdAt,
+      publish,
       name,
       "slug": slug.current,
       "image": image.asset->url,
