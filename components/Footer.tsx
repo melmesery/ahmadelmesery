@@ -12,52 +12,50 @@ import "../styles/Footer.css";
 export const revalidate = 10;
 
 export default async function Footer() {
-  const { linkedin, facebook, behance, instagram, youtube, whatsapp } =
+  const { facebook, linkedin, behance, instagram, youtube, whatsapp } =
     await getProfile();
+
+  const links = [
+    {
+      icon: <FaLinkedinIn />,
+      source: linkedin,
+    },
+    {
+      icon: <FaInstagram />,
+      source: instagram,
+    },
+    {
+      icon: <FaBehance />,
+      source: behance,
+    },
+
+    {
+      icon: <FaYoutube />,
+      source: youtube,
+    },
+    {
+      icon: <FaWhatsapp />,
+      source: whatsapp,
+    },
+    {
+      icon: <FaFacebookF />,
+      source: facebook,
+    },
+  ];
+
   return (
     <div className="footer">
       <div className="footer-container">
         <div className="flex flex-row items-center justify-center gap-3 sm:gap-5">
-          {linkedin && (
-            <a href={linkedin} target="_blank" className="social">
-              <FaLinkedinIn />
-            </a>
-          )}
-          {facebook && (
-            <a href={facebook} target="_blank" className="social">
-              <FaFacebookF />
-            </a>
-          )}
-          {behance && (
-            <a href={behance} target="_blank" className="social">
-              <FaBehance />
-            </a>
-          )}
-          {youtube && (
-            <a href={youtube} target="_blank" className="social">
-              <FaYoutube />
-            </a>
-          )}
-          {whatsapp && (
-            <a
-              href={`https://wa.me/2${whatsapp}`}
-              target="_blank"
-              className="social"
-            >
-              <FaWhatsapp />
-            </a>
-          )}
-          {instagram && (
-            <a
-              href={instagram}
-              target="_blank" 
-              className="social"
-            >
-              <FaInstagram />
-            </a>
+          {links.map(
+            ({ icon, source }, index) =>
+              source && (
+                <a href={source} target="_blank" className="social" key={index}>
+                  {icon}
+                </a>
+              )
           )}
         </div>
-        {/* <p className="mb-0 text-sm sm:text-base font-bold">Ahmad Elmesery &copy; {new Date().getFullYear()}</p> */}
       </div>
     </div>
   );

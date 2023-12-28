@@ -11,6 +11,6 @@
    grid items-center justify-center text-white dark:text-black;
 }
 
-/* .social {
-  @apply bg-slate-700 dark:bg-slate-300 p-2 rounded-full  hover:bg-[#013240] dark:hover:bg-[#EFF0F2];
-} */
+.social {
+  @apply text-xl hover:opacity-75;
+}

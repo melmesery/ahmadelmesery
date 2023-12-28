@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { FaArrowUp } from "react-icons/fa";
+import { PiArrowFatLinesUpThin } from "react-icons/pi";
 
 export default function ScrollTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -33,7 +33,7 @@ export default function ScrollTop() {
         hidden sm:flex text-3xl w-12 h-12 items-center justify-center rounded-full fixed right-10 bottom-[120px] ${isVisible ? "visible" : "invisible"
         }`}
     >
-      <FaArrowUp />
+<PiArrowFatLinesUpThin />
     </div>
   );
 }
