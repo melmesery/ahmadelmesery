@@ -8,13 +8,13 @@ export default function Project({ project }: any) {
       <h1 className="product_head">#{name}</h1>
       <div className="prod">
         <iframe
-          className="w-full aspect-video  animate__animated animate__slideInUp"
+          className="w-full aspect-video animate-fade-up"
           title="vimeo-player"
           src={url}
           allowFullScreen
         ></iframe>
       </div>
-      <div className="product_content">
+      <div className="product_content animate-fade-up">
         <PortableText value={content} />
       </div>
     </section>

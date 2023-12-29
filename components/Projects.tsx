@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Projects({ projects }: any) {
   return (
-    <div className="projects_container">
+    <div className="projects_container animate-fade-up">
       {projects &&
         projects.map((project: any) => (
           <Link
