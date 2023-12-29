@@ -13,7 +13,7 @@ export default async function page() {
         <>
             {publish && url ? (
                 <div
-                    className="max-w-[90%] lg:max-w-[1350px] mx-auto lg:px-[65px] py-[50px] "
+                    className="max-w-[90%] lg:max-w-[1350px] mx-auto lg:px-[65px] py-[50px]"
                 >
                     <iframe
                         className="w-full aspect-video animate__animated animate__slideInUp"

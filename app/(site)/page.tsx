@@ -16,16 +16,14 @@ export default async function Home() {
       mx-auto lg:px-[65px] py-[50px]"
     >
       {url && publish && (
-        <Link href="/reel" className="reel">
-          <>
-            <div className="reel_img animate__animated animate__fadeInUp">
-              <Image src={image} width={1900} height={900} alt={name} />
-            </div>
-            <div className="reel_cover">
+        <div className="animate__animated animate__fadeInUp">
+          <div className="reel">
+            <Image src={image} width={1900} height={900} alt={name} />
+            <Link href="/reel" className="reel_cover">
               <h1>{name}</h1>
-            </div>
-          </>
-        </Link>
+            </Link>
+          </div>
+        </div>
       )}
 
       <Projects projects={projects} />

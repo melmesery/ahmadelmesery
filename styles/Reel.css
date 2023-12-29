@@ -1,5 +1,8 @@
+/* .reel_container {
+  @apply ;
+} */
 .reel {
-  @apply relative flex items-center justify-center  mb-3 sm:mb-5
+  @apply relative flex items-center justify-center mb-3 sm:mb-5
   transform duration-[0.3s] hover:-translate-y-2 sm:hover:-translate-y-3 ease-in-out;
 }
 .reel_cover {
@@ -10,7 +13,9 @@
 .reel:hover .reel_cover {
   @apply opacity-80;
 }
-
+.reel:hover h1 {
+  @apply animate-fade-up animate-duration-[0.3s] animate-delay-0;
+}
 /* Details Section */
 .reel_details {
   @apply dark:bg-[#013240];
