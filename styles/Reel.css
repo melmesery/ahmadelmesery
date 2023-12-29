@@ -24,7 +24,7 @@
   @apply py-10;
 }
 .details_headline {
-  @apply text-4xl font-bold mb-10 dark:underline
+  @apply text-xl sm:text-3xl font-bold mb-10 dark:underline
     dark:decoration-yellow-400;
 }
 .detail {
@@ -39,7 +39,7 @@
     grid items-center justify-center;
 }
 .view_button {
-  @apply text-2xl bg-red-400 px-8 py-3 rounded-full 
+  @apply sm:text-2xl bg-red-400 px-8 py-3 rounded-full 
     hover:transform hover:-translate-y-1 hover:odd:transition-transform 
     hover:duration-300 hover:ease-in-out hover:opacity-80;
 }

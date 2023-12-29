@@ -28,7 +28,7 @@ animate-fade-left animate-duration-[0.5s] animate-delay-0 animate-ease-in-out;
   @apply py-10;
 }
 .credits_headline {
-  @apply text-3xl font-extrabold mb-7 text-green-600;
+  @apply text-xl sm:text-3xl font-extrabold mb-7 text-green-600;
 }
 .credits_grid {
   @apply grid grid-cols-4;
