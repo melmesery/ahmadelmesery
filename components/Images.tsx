@@ -60,7 +60,7 @@ const Images = ({ project }: any) => {
               alt={name}
               width={500}
               height={230}
-              className="animate-fade-up animate-delay-[1500ms] animate-ease-in-out"
+              className="animate-fade-up animate-delay-[2000ms] animate-ease-in-out"
             />
           </div>
           <div className="animate-fade-up animate-delay-[3000ms] animate-ease-in-out">
