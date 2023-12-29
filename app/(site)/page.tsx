@@ -16,7 +16,7 @@ export default async function Home() {
       mx-auto lg:px-[65px] py-[50px]"
     >
       {url && publish && (
-        <div className="animate__animated animate__fadeInUp">
+        <div className="">
           <div className="reel">
             <Image src={image} width={1900} height={900} alt={name} />
             <Link href="/reel" className="reel_cover">

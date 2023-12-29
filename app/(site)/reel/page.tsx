@@ -16,16 +16,16 @@ export default async function page() {
                     className="max-w-[90%] lg:max-w-[1350px] mx-auto lg:px-[65px] py-[50px]"
                 >
                     <iframe
-                        className="w-full aspect-video animate__animated animate__slideInUp"
+                        className="w-full aspect-video"
                         title="vimeo-player"
                         src={url}
                         allowFullScreen
                     ></iframe>
-                    <div className="mt-10 animate__animated animate__slideInUp">
+                    <div className="mt-10">
                         <PortableText value={content} />
                     </div>
                     <ReelDetails />
-                    <section className="view_projects animate__animated animate__slideInUp">
+                    <section className="view_projects">
                         <Link href="/" className="view_button">
                             View more projects
                         </Link>
