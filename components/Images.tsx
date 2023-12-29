@@ -37,7 +37,7 @@ const Images = ({ project }: any) => {
               alt={name}
               width={650}
               height={340}
-              className="animate-fade-up animate-delay-500 animate-ease-in-out"
+              className="animate-fade-up animate-delay-1000 animate-ease-in-out"
             />
           </div>
            <div className="grid xs:grid-cols-3 grid-cols-1 gap-1 mb-1 items-center justify-between">
@@ -46,7 +46,7 @@ const Images = ({ project }: any) => {
               alt={name}
               width={500}
               height={230}
-              className="animate-fade-up animate-delay-[2000ms] animate-ease-in-out"
+              className="animate-fade-up animate-delay-[1500ms] animate-ease-in-out"
             />
             <Image
               src={smallImages[1]}
@@ -60,7 +60,7 @@ const Images = ({ project }: any) => {
               alt={name}
               width={500}
               height={230}
-              className="animate-fade-up animate-delay-[2000ms] animate-ease-in-out"
+              className="animate-fade-up animate-delay-[2500ms] animate-ease-in-out"
             />
           </div>
           <div className="animate-fade-up animate-delay-[3000ms] animate-ease-in-out">
