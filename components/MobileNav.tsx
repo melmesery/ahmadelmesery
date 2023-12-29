@@ -26,7 +26,7 @@ export default function MobileNav({ lightLogo, darkLogo, url, publish }: any) {
       {toggle && (
         <div
           className="absolute top-20 z-50  w-full min-h-[30vh] dark:bg-[#013240] bg-[#EFF0F2] 
-                animate-fade-down animate-once animate-duration-[0.1s] animate-delay-[0.2s]                
+                animate-fade-down animate-once animate-duration-[0s] animate-delay-[0s]                
                 "
         >
           <Link

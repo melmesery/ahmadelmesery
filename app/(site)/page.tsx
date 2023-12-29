@@ -13,18 +13,16 @@ export default async function Home() {
     <div
       className="max-w-[90%] 
       lg:max-w-[1350px] 
-      mx-auto lg:px-[65px] py-[50px] text-center"
+      mx-auto lg:px-[65px] py-[50px]"
     >
-      {/* <p className="mt-12 text-3xl sm:text-6xl font-bold 
-        bg-gradient-to-r from-orange-400 to-purple-600 bg-clip-text text-transparent">
-          Ahmad Elmesery
-        </p> */}
       {url && publish && (
-        <Link href="/reel" className="relative reel_link mb-3 sm:mb-5">
+        <Link href="/reel" className="reel">
           <>
-            <Image src={image} width={1900} height={900} alt={name} />
-            <div className="absolute w-full h-full top-0 left-0 opacity-0 bg-[#333] grid items-center justify-center hover:z-50 hover:opacity-75">
-              <h1 className="reel_name">{name}</h1>
+            <div className="reel_img animate__animated animate__fadeInUp">
+              <Image src={image} width={1900} height={900} alt={name} />
+            </div>
+            <div className="reel_cover">
+              <h1>{name}</h1>
             </div>
           </>
         </Link>

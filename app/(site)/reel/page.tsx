@@ -21,11 +21,11 @@ export default async function page() {
                         src={url}
                         allowFullScreen
                     ></iframe>
-                    <div className="mt-10">
+                    <div className="mt-10 animate__animated animate__slideInUp">
                         <PortableText value={content} />
                     </div>
                     <ReelDetails />
-                    <section className="view_projects">
+                    <section className="view_projects animate__animated animate__slideInUp">
                         <Link href="/" className="view_button">
                             View more projects
                         </Link>
