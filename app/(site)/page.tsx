@@ -19,7 +19,7 @@ export default async function Home() {
         <div className="animate-fade-up">
           <div className="reel">
             <Image src={image} width={1900} height={900} alt={name} />
-            <Link href="/reel" className="reel_cover">
+            <Link href="work/ahmed-elmesery-portfolio" className="reel_cover">
               <h1>{name}</h1>
             </Link>
           </div>

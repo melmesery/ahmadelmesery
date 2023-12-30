@@ -26,7 +26,7 @@ export default async function Navbar() {
 
             {url && publish && (
               <Link
-                href="/reel"
+                href="work/ahmed-elmesery-portfolio"
                 className="text-[#54BA6E] dark:text-[#FFE9B7] hover:text-[#DD4C39] 
                             hover:font-extrabold hover:italic dark:hover:text-[#54BA6E]"
               >

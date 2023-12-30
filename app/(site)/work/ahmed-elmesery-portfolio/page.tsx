@@ -1,10 +1,10 @@
 "use server";
 
-import { notFound } from "next/navigation";
-import { getReel } from "../../../sanity/sanity-utils.ts";
+import ReelDetails from "@/components/ReelDetails.tsx";
+import { getReel } from "@/sanity/sanity-utils.ts";
 import { PortableText } from "@portabletext/react";
-import ReelDetails from "../../../components/ReelDetails.tsx";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export default async function page() {
     const { url, publish, content } = await getReel();
