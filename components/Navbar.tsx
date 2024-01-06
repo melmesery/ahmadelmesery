@@ -17,7 +17,7 @@ export default async function Navbar() {
           <div className="flex flex-row items-center gap-5">
             <Link
               href="/"
-              className="text-[#54BA6E] dark:text-[#FFE9B7] hover:text-[#DD4C39] 
+              className="text-[#013240] dark:text-[#FFE9B7] hover:text-[#DD4C39] 
                     hover:font-extrabold hover:italic dark:hover:text-[#54BA6E]"
             >
               Work
@@ -26,7 +26,7 @@ export default async function Navbar() {
             {url && publish && (
               <Link
                 href="ahmed-elmesery-portfolio"
-                className="text-[#54BA6E] dark:text-[#FFE9B7] hover:text-[#DD4C39] 
+                className="text-[#013240] dark:text-[#FFE9B7] hover:text-[#DD4C39] 
                             hover:font-extrabold hover:italic dark:hover:text-[#54BA6E]"
               >
                 Reel
@@ -35,14 +35,14 @@ export default async function Navbar() {
             
             <Link
               href="/about"
-              className="text-[#54BA6E] dark:text-[#FFE9B7] hover:text-[#DD4C39] 
+              className="text-[#013240] dark:text-[#FFE9B7] hover:text-[#DD4C39] 
                     hover:font-extrabold hover:italic dark:hover:text-[#54BA6E]"
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="text-[#54BA6E] dark:text-[#FFE9B7] hover:text-[#DD4C39] 
+              className="text-[#013240] dark:text-[#FFE9B7] hover:text-[#DD4C39] 
                     hover:font-extrabold hover:italic dark:hover:text-[#54BA6E]"
             >
               Contact

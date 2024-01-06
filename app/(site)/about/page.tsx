@@ -5,7 +5,7 @@ import "@/styles/About.css";
 export default function About() {
   return (
     <div className="about_container">
-      <h1 className="about_headline">About</h1>
+      {/* <h1 className="about_headline">About</h1> */}
       <div className="about_data">
         <div className="about_profile animate-fade-up">
           <Profile />
