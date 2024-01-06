@@ -13,7 +13,7 @@ export default async function Home() {
     <div
       className="max-w-[90%] 
       lg:max-w-[1350px] 
-      mx-auto lg:px-[65px] py-[50px]"
+      mx-auto lg:px-[65px] pt-[30px] pb-[50px]"
     >
       {url && publish && (
         <div className="animate-fade-up">
