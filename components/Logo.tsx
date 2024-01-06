@@ -23,9 +23,9 @@ export default function Logo({ lightLogo, darkLogo }: any) {
         <Link href="/" className="cursor-pointer">
           <Image
             src={logoToggle ? lightLogo : darkLogo}
-            alt="Ahmad-Elmesery-logo"
             width={50}
             height={50}
+            alt="Ahmad-Elmesery-logo"
           />
         </Link>
       ) : (

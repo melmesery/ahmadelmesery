@@ -10,8 +10,7 @@ export const revalidate = 10;
 export default async function Navbar() {
   const { lightLogo, darkLogo } = await getProfile();
   const { url, publish } = await getReel();
-  return (
-    <>
+  return ( 
       <nav>
         <div className="hidden max-w-[1350px] mx-auto py-[30px] px-[65px] lg:flex items-center justify-between">
           <Logo lightLogo={lightLogo} darkLogo={darkLogo} />
@@ -26,7 +25,7 @@ export default async function Navbar() {
 
             {url && publish && (
               <Link
-                href="work/ahmed-elmesery-portfolio"
+                href="ahmed-elmesery-portfolio"
                 className="text-[#54BA6E] dark:text-[#FFE9B7] hover:text-[#DD4C39] 
                             hover:font-extrabold hover:italic dark:hover:text-[#54BA6E]"
               >
@@ -57,7 +56,6 @@ export default async function Navbar() {
           url={url}
           publish={publish}
         />
-      </nav>
-    </>
+      </nav> 
   );
 }

@@ -24,8 +24,7 @@
   @apply py-10;
 }
 .details_headline {
-  @apply text-xl sm:text-3xl font-bold mb-10 dark:underline
-    dark:decoration-yellow-400;
+  @apply text-xl sm:text-3xl font-bold mb-10;
 }
 .detail {
   @apply flex flex-row gap-2 sm:gap-5 mb-5;

@@ -15,7 +15,7 @@ export default function MobileNav({ lightLogo, darkLogo, url, publish }: any) {
     setToggle(false);
   };
   return (
-    <>
+    <nav>
       <div className="max-w-[90%] py-[15px] mx-auto lg:hidden flex items-center justify-between text-center">
         <Logo lightLogo={lightLogo} darkLogo={darkLogo} />
         <div className="flex flex-row items-center -mr-3">
@@ -64,6 +64,6 @@ export default function MobileNav({ lightLogo, darkLogo, url, publish }: any) {
           
         </div>
       )}
-    </>
+    </nav>
   );
 }
