@@ -2,25 +2,24 @@
   @apply static w-full 
   max-w-[90%]
   lg:max-w-[1350px] mx-auto 
+  pt-[30px]
   pb-[100px]   
   lg:px-[65px] 
 }
 
-.about_headline {
+/* .about_headline {
   @apply text-4xl sm:text-5xl mt-[17px] mb-[39px] font-bold
   animate-fade-left animate-duration-[0.5s] animate-delay-0 animate-ease-in-out;
 
-}
+} */
 .about_data {
   @apply grid grid-cols-2 gap-5 sm:gap-10 lg:gap-1 items-center md:justify-center;
 }
 .about_profile {
   @apply w-full lg:w-[90%] col-span-2 md:col-span-1 
-  /* animate-fade-up animate-duration-[0.5s] animate-delay-0 animate-ease-in-out */
-  block mx-auto lg:mx-0 lg:mb-0;
+   block mx-auto lg:mx-0 lg:mb-0;
 }
 /* Summary */
 .about_summary {
   @apply col-span-2 md:col-span-1 ;
-  /* animate-fade-up animate-duration-[0.7s] animate-delay-0 animate-ease-in-out; */
-}
+ }
