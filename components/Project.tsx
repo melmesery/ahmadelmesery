@@ -5,7 +5,7 @@ export default function Project({ project }: any) {
   return (
     <section className="product_video">
       <h3 className="product_creator">{client}</h3>
-      <h1 className="product_head">#{name}</h1>
+      <h1 className="product_head">{name}</h1>
       <div className="prod">
         <iframe
           className="w-full aspect-video animate-fade-up"

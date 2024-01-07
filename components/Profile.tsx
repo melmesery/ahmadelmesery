@@ -11,8 +11,8 @@ export default async function Profile() {
       src={image}
       alt="Ahmad-Elmesery-Reel"
       className="profile_image"
-      width={500}
-      height={500}
+      width={600}
+      height={600}
       quality={100}
     />
   );

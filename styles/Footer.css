@@ -8,9 +8,9 @@
   mx-auto 
   lg:px-[65px]
   py-[40px] 
-   grid items-center justify-center text-white dark:text-black;
+   grid items-center justify-center text-[#EFF0F2] dark:text-[#013240];
 }
 
 .social {
-  @apply text-xl hover:opacity-75;
+  @apply text-2xl hover:opacity-75;
 }

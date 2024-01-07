@@ -24,6 +24,11 @@ const config: Config = {
     },
   },
   darkMode: "class",
+  variants: {
+    extend: {
+      textColor: ['responsive', 'hover', 'focus', 'group-hover', 'dark'],
+    },
+  },
   plugins: [nextui(), require('tailwindcss-animated')
   ],
 }

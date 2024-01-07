@@ -3,7 +3,7 @@ export default function Team({ project }: any) {
   return (
     <section className="credits_container">
       <div className="product_credits">
-        <h1 className="credits_headline uppercase">collaborators</h1>
+        <h1 className="credits_headline capitalize">collaborators</h1>
         <div className="credits_grid">
           {team.map((member: any) => (
             <div key={member._id} className="credit">

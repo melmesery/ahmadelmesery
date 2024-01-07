@@ -5,12 +5,14 @@ import { getProject } from "@/sanity/sanity-utils.ts";
 import "@/styles/Project.css";
 import { Props } from "@/types/Props.ts";
 import Link from "next/link";
+import Footer from "@/components/Footer.tsx";
 
 export const revalidate = 10;
 
 export default async function ProjectPage({ params }: Props) {
   const project = await getProject(params.slug);
-   return (
+  return (
+    <>
     <div className="product_container">
       <Project project={project} />
       <Team project={project} />
@@ -21,5 +23,7 @@ export default async function ProjectPage({ params }: Props) {
         </Link>
       </section>
     </div>
+    <Footer />
+    </>
   );
 }

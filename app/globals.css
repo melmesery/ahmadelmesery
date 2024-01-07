@@ -23,7 +23,8 @@ body {
 }
 
 main {
-  @apply dark:bg-[#013240] bg-[#EFF0F2] min-h-[calc(100vh-180px)];
+  @apply dark:bg-[#013240] bg-[#EFF0F2] 
+  min-h-screen;
 }
 
 /* Projects */

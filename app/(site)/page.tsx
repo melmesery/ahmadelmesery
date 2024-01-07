@@ -3,6 +3,7 @@ import { getProjects, getReel } from "@/sanity/sanity-utils.ts";
 import "@/styles/Reel.css";
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "../../components/Footer.tsx";
 
 export const revalidate = 10;
 
@@ -10,8 +11,9 @@ export default async function Home() {
   const projects = await getProjects();
   const { url, publish, image, name } = await getReel();
   return (
+    <>
     <div
-      className="max-w-[90%] 
+      className="min-h-screen max-w-[90%] 
       lg:max-w-[1350px] 
       mx-auto lg:px-[65px] pt-[30px] pb-[50px]"
     >
@@ -28,5 +30,7 @@ export default async function Home() {
 
       <Projects projects={projects} />
     </div>
+    <Footer />
+    </>
   );
 }
