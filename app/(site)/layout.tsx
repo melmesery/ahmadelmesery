@@ -3,14 +3,15 @@ import ScrollTop from "@/components/ScrollTop.tsx";
 import type { Metadata } from "next";
 import { Montserrat as FONT } from "next/font/google";
 // import { Padauk as FONT } from "next/font/google";
-import Navbar from "../../components/Navbar.tsx";
+import Navbar from "@/components/Navbar.tsx";
 import "../globals.css";
 import Providers from "./providers.tsx";
-import 'animate.css';
+import "animate.css";
+import Preloader from "@/components/Preloader.tsx";
 
 const font = FONT({
   subsets: ["latin"],
-  weight: "400"
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -20,17 +21,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
- }: {
+}: {
   children: React.ReactNode;
- }) {
+}) {
   return (
     <html lang="en" className="scroll-smooth">
       <body className={font.className}>
         <Providers>
-          <Navbar />
-          <main>{children}</main>
-           {/* <Footer /> */}
-          <ScrollTop />
+          <Preloader>
+            <Navbar />
+            <main>{children}</main>
+            {/* <Footer /> */}
+            <ScrollTop />
+          </Preloader>
         </Providers>
       </body>
     </html>
