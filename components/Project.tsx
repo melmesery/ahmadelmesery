@@ -4,8 +4,8 @@ export default function Project({ project }: any) {
   const { client, name, url, content } = project;
   return (
     <section className="product_video">
-      <h3 className="product_creator">{client}</h3>
-      <h1 className="product_head">{name}</h1>
+      <h3 className="product_creator" data-aos="zoom-in">{client}</h3>
+      <h1 className="product_head" data-aos="zoom-in">{name}</h1>
       <div className="prod">
         <iframe
           className="w-full aspect-video"

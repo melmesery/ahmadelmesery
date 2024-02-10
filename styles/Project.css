@@ -7,11 +7,11 @@
 /* Product Hero Section */
 .product_creator {
   @apply text-2xl mt-[17px] mb-[8px] 
-  animate-fade-left animate-duration-[0.5s] animate-delay-0 animate-ease-in-out;
+  /* animate-fade-right animate-duration-[0.5s] animate-delay-0 animate-ease-in-out; */
 }
 .product_head {
   @apply text-4xl sm:text-5xl font-bold mb-[20px]
-animate-fade-left animate-duration-[0.5s] animate-delay-0 animate-ease-in-out;
+/* animate-fade-right animate-duration-[0.5s] animate-delay-0 animate-ease-in-out; */
 }
 /* .prod {
   @apply 

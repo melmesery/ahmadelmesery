@@ -11,7 +11,7 @@ export default function About() {
           <div className="about_profile" data-aos="flip-up">
             <Profile />
           </div>
-          <div className="about_summary" data-aos="fade-left">
+          <div className="about_summary" data-aos="flip-up">
             <Summary />
           </div>
         </div>
