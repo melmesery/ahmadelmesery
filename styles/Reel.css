@@ -1,6 +1,3 @@
-/* .reel_container {
-  @apply ;
-} */
 .reel {
   @apply relative flex items-center justify-center mb-3 sm:mb-5
   transform duration-[0.3s] hover:-translate-y-2 sm:hover:-translate-y-3 ease-in-out;

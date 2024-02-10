@@ -1,22 +1,27 @@
+"use client";
+
 import Profile from "@/components/Profile.tsx";
 import Summary from "@/components/Summary.tsx";
 import "@/styles/About.css";
-import RootLayout from "../layout.tsx";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function About() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    // <RootLayout showFooter={false}>
-      <div className="about_container">
-        {/* <h1 className="about_headline">About</h1> */}
-        <div className="about_data">
-          <div className="about_profile animate-fade-up">
-            <Profile />
-          </div>
-          <div className="about_summary animate-fade-up">
-            <Summary />
-          </div>
+    <div className="about_container">
+      <div className="about_data">
+        <div className="about_profile" data-aos="flip-up">
+          <Profile />
+        </div>
+        <div className="about_summary" data-aos="fade-up">
+          <Summary />
         </div>
       </div>
-    // </RootLayout>
+    </div>
   );
 }

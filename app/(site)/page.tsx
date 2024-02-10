@@ -4,6 +4,8 @@ import "@/styles/Reel.css";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer.tsx";
+import { Suspense } from "react";
+import Loading from "./loading.tsx";
 
 export const revalidate = 10;
 
@@ -27,8 +29,9 @@ export default async function Home() {
             </div>
           </div>
         )}
-
-        <Projects projects={projects} />
+        <Suspense fallback={<Loading />}>
+          <Projects projects={projects} />
+        </Suspense>
       </div>
       <Footer />
     </>

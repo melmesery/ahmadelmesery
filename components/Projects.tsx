@@ -14,7 +14,7 @@ export default function Projects({ projects }: any) {
             className="project"
           >
             <>
-              <div className="project_gif_img"> 
+              <div className="project_gif_img">
                 <Image
                   src={project.gif}
                   alt={project.name}
