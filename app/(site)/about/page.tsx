@@ -4,7 +4,6 @@ import Profile from "@/components/Profile.tsx";
 import Summary from "@/components/Summary.tsx";
 import "@/styles/About.css";
 import AOS from "aos";
-import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 export default function About() {
