@@ -6,13 +6,12 @@ export default function Project({ project }: any) {
     <section className="product_video">
       <h3 className="product_creator" data-aos="zoom-in">{client}</h3>
       <h1 className="product_head" data-aos="zoom-in">{name}</h1>
-      <div className="prod">
+      <div className="prod" data-aos="fade-up">
         <iframe
           className="w-full aspect-video"
           title="vimeo-player"
           src={url}
           allowFullScreen
-          data-aos="fade-up"
         ></iframe>
       </div>
       <div className="product_content" data-aos="fade-up">
