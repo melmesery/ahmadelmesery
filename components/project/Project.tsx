@@ -4,12 +4,8 @@ export default function Project({ project }: any) {
   const { client, name, url, content } = project;
   return (
     <section className="project-video">
-      <h3 className="project-creator" data-aos="zoom-in">
-        {client}
-      </h3>
-      <h1 className="project-title" data-aos="zoom-in">
-        {name}
-      </h1>
+      <h3 className="project-creator">{client}</h3>
+      <h1 className="project-title">{name}</h1>
       <iframe
         title="vimeo-player"
         src={url}
