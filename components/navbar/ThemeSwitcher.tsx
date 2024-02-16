@@ -4,7 +4,6 @@ import { SunIcon } from "@heroicons/react/20/solid";
 import { MoonIcon } from "@heroicons/react/24/solid";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import "../styles/ThemeSwitcher.css";
 
 export default function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);

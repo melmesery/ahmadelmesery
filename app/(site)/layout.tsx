@@ -1,14 +1,10 @@
-import Footer from "@/components/Footer.tsx";
+import Navbar from "@/components/navbar/Navbar.tsx";
+import Preloader from "@/components/Preloader.tsx";
 import ScrollTop from "@/components/ScrollTop.tsx";
 import type { Metadata } from "next";
 import { Montserrat as FONT } from "next/font/google";
-// import { Padauk as FONT } from "next/font/google";
-import Navbar from "@/components/Navbar.tsx";
 import "../globals.css";
 import Providers from "./providers.tsx";
-import "animate.css";
-import Preloader from "@/components/Preloader.tsx";
-import "aos/dist/aos.css";
 
 const font = FONT({
   subsets: ["latin"],
@@ -29,12 +25,11 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={font.className}>
         <Providers>
-          {/* <Preloader> */}
+          <Preloader>
             <Navbar />
             <main>{children}</main>
-            {/* <Footer /> */}
             <ScrollTop />
-          {/* </Preloader> */}
+          </Preloader>
         </Providers>
       </body>
     </html>

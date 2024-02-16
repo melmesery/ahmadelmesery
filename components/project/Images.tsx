@@ -1,23 +1,20 @@
 "use client";
 
+import AOSWrapper from "@/hooks/useAOS.tsx";
 import Image from "next/image";
-import AOSWrapper from "../utils/AOS.tsx";
 
 const Images = ({ project }: any) => {
   const { bigImage, mediumImages, smallImages, name } = project;
 
   return (
     <AOSWrapper>
-      <section
-        className="py-10 "
-      >
-        <div className="grid xs:grid-cols-2 grid-cols-1 gap-1 mb-1 items-center justify-between">
+      <section className="images-container">
+        <div className="images-first-row">
           <Image
             src={mediumImages[0]}
             alt={name}
             width={650}
             height={340}
-            // className="animate-fade-up animate-delay-500 animate-ease-in-out"
             data-aos="fade-up"
           />
           <Image
@@ -25,17 +22,15 @@ const Images = ({ project }: any) => {
             alt={name}
             width={650}
             height={340}
-            // className="animate-fade-up animate-delay-1000 animate-ease-in-out"
             data-aos="fade-up"
           />
         </div>
-        <div className="grid xs:grid-cols-3 grid-cols-1 gap-1 mb-1 items-center justify-between">
+        <div className="images-second-row">
           <Image
             src={smallImages[0]}
             alt={name}
             width={500}
             height={230}
-            // className="animate-fade-up animate-delay-[1500ms] animate-ease-in-out"
             data-aos="fade-up"
             data-aos-duration="1000"
           />
@@ -44,7 +39,6 @@ const Images = ({ project }: any) => {
             alt={name}
             width={500}
             height={230}
-            // className="animate-fade-up animate-delay-[2000ms] animate-ease-in-out"
             data-aos="fade-up"
             data-aos-duration="1000"
           />
@@ -53,16 +47,11 @@ const Images = ({ project }: any) => {
             alt={name}
             width={500}
             height={230}
-            // className="animate-fade-up animate-delay-[2500ms] animate-ease-in-out"
             data-aos="fade-up"
             data-aos-duration="1000"
           />
         </div>
-        <div
-          // className="animate-fade-up animate-delay-[3000ms] animate-ease-in-out"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-        >
+        <div data-aos="fade-up" data-aos-duration="2000">
           <Image src={bigImage} alt={name} width={1260} height={690} />
         </div>
       </section>

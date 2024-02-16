@@ -1,41 +1,35 @@
-.reel {
-  @apply relative flex items-center justify-center mb-3 sm:mb-5
-  transform duration-[0.3s] hover:-translate-y-2 sm:hover:-translate-y-3 ease-in-out;
+.reel-container {
+  @apply max-w-[90%] lg:max-w-[1350px] mx-auto lg:px-[65px] py-[50px];
 }
-.reel_cover {
-  @apply absolute text-base text-white xs:text-5xl top-0 left-0  
-    bg-[#333] opacity-0 w-full h-full text-center 
-    flex items-center justify-center;
+
+.reel-container iframe {
+  @apply w-full aspect-video;
 }
-.reel:hover .reel_cover {
-  @apply opacity-80;
+
+.reel-container .reel-content {
+  @apply mt-10;
 }
-.reel:hover h1 {
-  @apply animate-fade-up animate-duration-[0.3s] animate-delay-0;
-}
-/* Details Section */
-.reel_details {
-  @apply dark:bg-[#013240];
-}
-.details {
+
+.reel-container .details-container {
   @apply py-10;
 }
-.details_headline {
+
+.reel-container .details-container .details-headline {
   @apply text-xl sm:text-3xl font-bold mb-10;
 }
-.detail {
+
+.reel-container .details-container .detail {
   @apply flex flex-row gap-2 sm:gap-5 mb-5;
 }
-.detail_time {
+
+.reel-container .details-container .detail .detail-time {
   @apply text-sky-500 font-bold;
 }
-/* View Section */
-.view_projects {
-  @apply min-h-[15vh] sm:min-h-[30vh]
-    grid items-center justify-center;
+
+.reel-container .view-projects {
+  @apply min-h-[15vh] sm:min-h-[30vh] grid items-center justify-center;
 }
-.view_button {
-  @apply sm:text-2xl bg-red-400 px-8 py-3 rounded-full 
-    hover:transform hover:-translate-y-1 hover:odd:transition-transform 
-    hover:duration-300 hover:ease-in-out hover:opacity-80;
+
+.reel-container .view-projects .view-button {
+  @apply sm:text-2xl bg-red-400 px-8 py-3 rounded-full hover:transform hover:-translate-y-1 hover:odd:transition-transform hover:duration-300 hover:ease-in-out hover:opacity-80;
 }

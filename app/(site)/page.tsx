@@ -1,39 +1,25 @@
-import Projects from "@/components/Projects.tsx";
-import { getProjects, getReel } from "@/sanity/sanity-utils.ts";
-import "@/styles/Reel.css";
-import Image from "next/image";
-import Link from "next/link";
 import Footer from "@/components/Footer.tsx";
-import { Suspense } from "react";
-import Loading from "./loading.tsx";
+import Hero from "@/components/home/Hero.tsx";
+import Projects from "@/components/home/Projects.tsx";
+import AOSWrapper from "@/hooks/useAOS.tsx";
+import { getProjects, getReel } from "@/sanity/sanity-utils.ts";
+import "@/styles/Home.css";
 
 export const revalidate = 10;
 
 export default async function Home() {
   const projects = await getProjects();
-  const { url, publish, image, name } = await getReel();
+  const { url, publish } = await getReel();
+
   return (
-    <>
-      <div
-        className="min-h-screen max-w-[90%] 
-      lg:max-w-[1350px] 
-      mx-auto lg:px-[65px] pt-[30px] pb-[50px]"
-      >
+    <AOSWrapper>
+      <div className="home-container">
         {url && publish && (
-          <div className="animate-fade-up">
-            <div className="reel">
-              <Image src={image} width={1900} height={900} alt={name} />
-              <Link href="work/ahmed-elmesery-portfolio" className="reel_cover">
-                <h1>{name}</h1>
-              </Link>
-            </div>
-          </div>
+          <Hero />
         )}
-        <Suspense fallback={<Loading />}>
-          <Projects projects={projects} />
-        </Suspense>
+        <Projects projects={projects} />
       </div>
       <Footer />
-    </>
+    </AOSWrapper>
   );
 }

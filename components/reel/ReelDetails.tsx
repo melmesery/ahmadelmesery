@@ -1,17 +1,17 @@
-import { getReel } from "../sanity/sanity-utils.ts";
-import "../styles/Reel.css";
+import { getReel } from "@/sanity/sanity-utils.ts";
 
 export const revalidate = 10;
 
 export default async function ReelDetails() {
   const reel = await getReel();
   const { details } = reel;
+
   return (
-    <div className="details animate-fade-up">
-      <h1 className="details_headline">Included Projects</h1>
+    <div className="details-container" data-aos="fade-up">
+      <h1 className="details-headline">Included Projects</h1>
       {details.map((detail: any) => (
         <div key={detail._id} className="detail">
-          <p className="detail_time">{detail.time}</p>
+          <p className="detail-time">{detail.time}</p>
           <p>{detail.description}</p>
         </div>
       ))}

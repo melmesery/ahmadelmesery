@@ -1,5 +1,5 @@
+import { getProfile } from "@/sanity/sanity-utils.ts";
 import Image from "next/image";
-import { getProfile } from "../sanity/sanity-utils.ts";
 
 export const revalidate = 10;
 

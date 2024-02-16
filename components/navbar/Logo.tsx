@@ -20,7 +20,7 @@ export default function Logo({ lightLogo, darkLogo }: any) {
   return (
     <>
       {lightLogo && darkLogo ? (
-        <Link href="/" className="cursor-pointer">
+        <Link href="/">
           <Image
             src={logoToggle ? lightLogo : darkLogo}
             width={50}
@@ -29,8 +29,8 @@ export default function Logo({ lightLogo, darkLogo }: any) {
           />
         </Link>
       ) : (
-        <div className="animate-pulse">
-          <div className="rounded-tl-lg rounded-bl-lg rounded-br-lg bg-slate-700 h-12 w-12" />
+        <div className="logo-animation">
+          <div className="logo-skeleton" />
         </div>
       )}
     </>

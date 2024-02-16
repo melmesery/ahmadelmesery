@@ -1,0 +1,15 @@
+.skeleton-container {
+  @apply max-w-[90%] lg:max-w-[1350px] mx-auto lg:px-[65px];
+}
+
+.skeleton-container .skeleton {
+  @apply p-4 w-full mx-auto;
+}
+
+.skeleton-container .skeleton .animation {
+  @apply animate-pulse;
+}
+
+.skeleton-container .skeleton .animation .skeleton-inner {
+  @apply bg-slate-700 min-h-[20vh] sm:min-h-[40vh] w-full;
+}
