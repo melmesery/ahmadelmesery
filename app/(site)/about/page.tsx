@@ -5,7 +5,7 @@ import "@/css/About.css";
 export default function page() {
   return (
     <div className="about-container">
-      <div className="about-data" data-aos="fade-up">
+      <div className="about-data" data-aos="fade-right">
         <div className="about-profile">
           <Profile />
         </div>
