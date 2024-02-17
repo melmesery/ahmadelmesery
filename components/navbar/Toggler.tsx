@@ -1,3 +1,5 @@
+import "@/css/Toggler.css";
+
 export default function Toggler({ toggle, menuToggle }: any) {
     return (
         <>

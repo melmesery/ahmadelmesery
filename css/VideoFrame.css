@@ -1,0 +1,4 @@
+iframe {
+  @apply w-full
+  aspect-video;
+}

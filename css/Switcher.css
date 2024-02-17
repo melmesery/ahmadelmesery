@@ -1,0 +1,20 @@
+.switcher {
+  @apply flex 
+  items-center 
+  justify-center 
+  p-2 
+  rounded-lg 
+  transition-colors;
+}
+
+.sun {
+  @apply h-5 
+  w-5 
+  text-[var(--sun)];
+}
+
+.moon {
+  @apply h-5 
+  w-5 
+  text-[var(--moon)];
+}

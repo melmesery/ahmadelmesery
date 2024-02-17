@@ -1,0 +1,5 @@
+.loader-container {
+  @apply min-h-[90vh] 
+  grid 
+  place-items-center;
+}

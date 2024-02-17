@@ -1,7 +1,7 @@
 "use client";
 
 import { Triangle } from "react-loader-spinner";
-import "../styles/Loader.css";
+import "../css/Loading.css";
 
 export default function Loading() {
   return (

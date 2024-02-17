@@ -1,0 +1,5 @@
+.footer-container {
+  @apply grid
+    place-items-center
+    py-5;
+}

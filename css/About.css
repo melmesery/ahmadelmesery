@@ -1,0 +1,37 @@
+.about-container {
+  @apply static 
+  w-full 
+  max-w-[90%] 
+  lg:max-w-[1350px] 
+  mx-auto 
+  py-[30px] 
+  lg:px-[65px];
+}
+
+.about-data {
+  @apply grid
+  grid-cols-5
+  items-center
+  md:justify-center
+  gap-5
+  sm:gap-10;
+}
+
+.about-profile {
+  @apply w-full 
+  mx-auto 
+  block 
+  col-span-5 
+  md:col-span-2 
+  lg:mx-0 
+  lg:mb-0;
+}
+
+.about-summary {
+  @apply col-span-5
+  md:col-span-3;
+}
+
+.summary-description {
+  @apply mt-8;
+}

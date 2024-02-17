@@ -1,0 +1,19 @@
+.view-projects {
+  @apply min-h-[10vh] 
+  grid
+  place-items-center;
+}
+
+.view-button {
+  @apply sm:text-2xl 
+  px-8 
+  py-3 
+  rounded-full 
+  bg-[var(--viewBtnBg)] 
+  hover:transform  
+  hover:-translate-y-1 
+  hover:odd:transition-transform 
+  hover:duration-300 
+  hover:ease-in-out 
+  hover:opacity-80;
+}

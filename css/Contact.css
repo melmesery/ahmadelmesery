@@ -1,0 +1,5 @@
+.contact-container {
+  @apply min-h-[90vh] 
+    py-[50px] 
+    text-center;
+}

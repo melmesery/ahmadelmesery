@@ -1,10 +1,8 @@
-import { getProfile, getReel } from "@/sanity/sanity-utils.ts";
-import "@/styles/Navbar.css";
+import { getProfile, getReel } from "@/cms/sanity-utils.ts";
+import "@/css/Navbar.css";
 import Links from "./Links.tsx";
 import Logo from "./Logo.tsx";
 import MobileNav from "./MobileNav.tsx";
-
-export const revalidate = 10;
 
 export default async function Navbar() {
   const { lightLogo, darkLogo } = await getProfile();

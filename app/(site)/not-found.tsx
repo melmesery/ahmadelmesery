@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import "@/styles/NotFound.css";
+import "@/css/NotFound.css";
 
 const NotFound = () => {
     return (

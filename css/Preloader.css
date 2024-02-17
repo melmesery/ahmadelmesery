@@ -1,0 +1,23 @@
+.preloader-container {
+  @apply fixed 
+  top-0 
+  left-0 
+  w-full 
+  h-full 
+  flex 
+  items-center 
+  justify-center 
+  bg-[var(--light)] 
+  dark:bg-[var(--dark)] 
+  z-50;
+}
+
+.preloader {
+  @apply animate-spin 
+  rounded-full 
+  border-t-4 
+  border-[var(--preloaderBorder)] 
+  border-opacity-25 
+  h-16 
+  w-16;
+}

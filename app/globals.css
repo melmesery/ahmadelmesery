@@ -2,56 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --maxWPg: 90%;
+  --maxWPx: 1320px;
+  --dark: #013240;
+  --light: #eff0f2;
+  --projectTitleBg: #333;
+  --detailsTime: rgb(14 165 233);
+  --viewBtnBg: rgb(248 113 113);
+  --preloaderBorder: rgb(59 130 246);
+  /* Navbar */
+  --lightLink: #013240;
+  --darkLink: #ffe9b7;
+  --lightHover: #dd4c39;
+  --darkHover: #54ba6e;
+  --activeLight: #dd4c39;
+  --activeDark: rgb(84, 186, 111);
+  --logoSkeletonBg: rgb(51 65 85);
+  /* Mobile */
+  --mobileDarkBg: #013240;
+  --mobilelightBg: #eff0f2;
+  --mobileDarkHoverBg: #2d3748;
+  --mobilelightHoverBg: rgb(226 232 240);
+  --mobileDarkHover: rgb(31 41 55);
+  --mobileLightHover: #dd4c39;
+  --mobileDarkBorder: #4a5568;
+  --mobileDark: #ffe9b7;
+  --mobileLight: #54ba6e;
+  /* NotFound */
+  --NotFoundHeadLine: rgb(239 68 68);
+  --NotFoundLink: rgb(59 130 246);
+  --NotFoundLinkHover: rgb(37 99 235);
+  /* Project Page */
+  --creditsheadline: rgb(22 163 74);
+  /* View Btn */
+  --viewLight: rgb(248 113 113);
+  /* ScrollTop */
+  --scrollLightBg: rgba(1, 50, 64, 0.4);
+  --scrollDarkBg: rgba(239, 240, 242, 0.4);
+  --scrollLight: #eff0f2;
+  --scrollDark: #013240;
+  /* Switcher */
+  --sun: rgb(253 186 116);
+  --moon: rgb(30 41 59);
+  /* Scrollbar */
+  --scrollBar: #dd4c39;
+}
+
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 4px;
+  @apply w-[10px] 
+  h-[4px];
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-.darkMode {
-  @apply dark:bg-[#013240];
-}
-.lightMode {
-  @apply bg-[#EFF0F2];
+  @apply bg-[var(--scrollBar)];
 }
 
 body {
-  @apply lightMode darkMode;
+  @apply bg-[var(--light)] 
+  dark:bg-[var(--dark)];
 }
 
 main {
-  @apply dark:bg-[#013240] bg-[#EFF0F2] 
-  min-h-screen;
-}
-
-/* Projects */
-.projects_container {
-  @apply grid grid-cols-1 xs:grid-cols-2 gap-3 xs:gap-5;
-}
-.project {
-  @apply relative flex items-center justify-center
-  transform duration-[0.3s] hover:-translate-y-2 sm:hover:-translate-y-3 ease-in-out;
-}
-.project_gif_img {
-  @apply relative;
-}
-.project_img {
-  @apply absolute top-0;
-}
-.project:hover .project_img {
-  @apply hidden;
-}
-.project:hover .project_title {
-  @apply opacity-80;
-}
-.project_title {
-  @apply absolute top-0 left-0  
-    bg-[#333] opacity-0 w-full h-full text-center 
-    flex items-center justify-center text-white sm:text-2xl;
-}
-.project:hover h1 {
-  @apply animate-fade-up animate-duration-[0.3s] animate-delay-0;
+  @apply min-h-screen
+  bg-[var(--light)] 
+  dark:bg-[var(--dark)];
 }

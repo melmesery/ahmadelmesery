@@ -1,5 +1,5 @@
+import "@/css/Contact.css";
 import Footer from "@/components/Footer.tsx";
-import "@/styles/Contact.css";
 
 export default function Contact() {
   return (

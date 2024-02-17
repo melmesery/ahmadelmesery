@@ -1,0 +1,35 @@
+.reel-container {
+  @apply max-w-[90%] 
+  lg:max-w-[1350px] 
+  mx-auto 
+  lg:px-[65px] 
+  py-[50px];
+}
+
+.reel-content {
+  @apply mt-10;
+}
+
+.details-container {
+  @apply py-10;
+}
+
+.details-container h1 {
+  @apply text-xl
+  sm:text-3xl
+  font-bold
+  mb-10;
+}
+
+.detail {
+  @apply flex
+  flex-row
+  gap-2
+  sm:gap-5
+  mb-5;
+}
+
+.detail-time {
+  @apply font-bold
+  text-[var(--detailsTime)];
+}

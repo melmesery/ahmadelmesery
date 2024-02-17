@@ -1,0 +1,95 @@
+.navbar-container {
+  @apply hidden
+  max-w-[1350px] 
+  mx-auto 
+  lg:flex
+  flex-row
+  items-center
+  justify-between
+  py-[30px] 
+  px-[65px];
+}
+
+.logo-animation {
+  @apply animate-pulse;
+}
+
+.logo-skeleton {
+  @apply rounded-tl-lg 
+  rounded-bl-lg 
+  rounded-br-lg 
+  bg-[var(--logoSkeletonBg)] 
+  h-12 
+  w-12;
+}
+
+.links-container {
+  @apply flex 
+  flex-row 
+  items-center
+  gap-5;
+}
+
+.active-light {
+  @apply text-[var(--activeLight)];
+}
+
+.active-dark {
+  @apply text-[var(--activeDark)];
+}
+
+.navbar-link {
+  @apply text-[var(--lightLink)] 
+  dark:text-[var(--darkLink)]
+  hover:text-[var(--lightHover)]
+  hover:dark:text-[var(--darkHover)]
+  hover:font-extrabold
+  hover:italic;
+}
+
+.mobile-nav-container {
+  @apply relative
+  lg:hidden
+  max-w-[90%]
+  mx-auto
+  flex 
+  items-center 
+  justify-between 
+  text-center
+  py-[15px];
+}
+
+.mobile-icons {
+  @apply flex
+    flex-row
+    items-center
+    -mr-3;
+}
+
+.mobile-links {
+  @apply absolute
+  w-full
+  min-h-[30vh]
+  top-20
+  z-50
+  bg-[var(--mobilelightBg)]
+  dark:bg-[var(--mobileDarkBg)];
+}
+
+.link {
+  @apply flex
+  flex-col
+  items-center
+  justify-center
+  min-h-[10vh]
+  border-t-[0.1px]
+  dark:border-[var(--mobileDarkBorder)]
+  text-[var(--mobileLight)]
+  dark:text-[var(--mobileDark)]
+  hover:text-[var(--mobileLightHover)]
+  hover:dark:text-[var(--mobileLight)]
+  hover:font-extrabold 
+  hover:italic
+  hover:bg-[var(--mobilelightHoverBg)]
+  hover:dark:bg-[var(--mobileDarkHover)];
+}

@@ -23,10 +23,7 @@ export default function MobileNav({ lightLogo, darkLogo, links }: any) {
         <Toggler toggle={toggle} menuToggle={menuToggle} />
       </div>
       {toggle && (
-        <div
-          className="mobile-links"
-          data-aos="fade-down"
-        >
+        <div className="mobile-links" data-aos="fade-down">
           {links?.map((link: any) => (
             <>
               {link.url && link.publish && (
