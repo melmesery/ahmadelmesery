@@ -50,13 +50,16 @@
 .mobile-nav-container {
   @apply relative
   lg:hidden
-  max-w-[90%]
+  py-[15px];
+}
+
+.mobile-nav {
+  @apply max-w-[90%] 
   mx-auto
   flex 
   items-center 
   justify-between 
-  text-center
-  py-[15px];
+  text-center;
 }
 
 .mobile-icons {

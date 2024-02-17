@@ -17,10 +17,12 @@ export default function MobileNav({ lightLogo, darkLogo, links }: any) {
 
   return (
     <div className="mobile-nav-container">
-      <Logo lightLogo={lightLogo} darkLogo={darkLogo} />
-      <div className="mobile-icons">
-        <ThemeSwitcher />
-        <Toggler toggle={toggle} menuToggle={menuToggle} />
+      <div className="mobile-nav">
+        <Logo lightLogo={lightLogo} darkLogo={darkLogo} />
+        <div className="mobile-icons">
+          <ThemeSwitcher />
+          <Toggler toggle={toggle} menuToggle={menuToggle} />
+        </div>
       </div>
       {toggle && (
         <div className="mobile-links" data-aos="fade-down">
