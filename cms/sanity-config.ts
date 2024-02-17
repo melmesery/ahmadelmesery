@@ -1,6 +1,5 @@
 import { visionTool } from '@sanity/vision';
 import { defineConfig } from 'sanity';
-import { structureTool } from 'sanity/structure';
 import schemas from './schemas/index.ts';
 
 const config = defineConfig({
@@ -10,7 +9,7 @@ const config = defineConfig({
   dataset: 'production',
   apiVersion: "2023-12-05",
   basePath: "/admin",
-  plugins: [structureTool(), visionTool()],
+  plugins: [visionTool()],
   schema: {
     types: schemas,
   },
