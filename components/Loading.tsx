@@ -1,17 +1,20 @@
 "use client";
 
-import { Triangle } from "react-loader-spinner";
+import { ThreeDots } from "react-loader-spinner";
 import "../css/Loading.css";
 
 export default function Loading() {
   return (
     <div className="loader-container">
-      <Triangle
+      <ThreeDots
         visible={true}
-        height="200"
-        width="200"
+        height="80"
+        width="80"
         color="#4fa94d"
-        ariaLabel="triangle-loading"
+        radius="9"
+        ariaLabel="three-dots-loading"
+        wrapperStyle={{}}
+        wrapperClass=""
       />
     </div>
   );

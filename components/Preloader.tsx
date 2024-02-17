@@ -9,14 +9,15 @@ const Preloader = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
 
   return loading ? (
     <div className="preloader-container">
-      <div className="preloader"></div>
+      <div className="preloader-name">Ahmed Elmesery</div>
+      <div className="preloader-title">Motion Graphics Designer</div>
     </div>
   ) : (
     children
