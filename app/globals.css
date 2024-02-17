@@ -49,13 +49,8 @@
   --scrollBar: #dd4c39;
 }
 
-::-webkit-scrollbar {
-  @apply w-[10px] 
-  h-[4px];
-}
-
-::-webkit-scrollbar-thumb {
-  @apply bg-[var(--scrollBar)];
+* {
+  scrollbar-width: thin;
 }
 
 body {
