@@ -5,11 +5,11 @@ import "@/css/About.css";
 export default function page() {
   return (
     <div className="about-container">
-      <div className="about-data">
-        <div className="about-profile" data-aos="fade-right">
+      <div className="about-data" data-aos="fade-up">
+        <div className="about-profile">
           <Profile />
         </div>
-        <div className="about-summary" data-aos="fade-right">
+        <div className="about-summary">
           <Summary />
         </div>
       </div>

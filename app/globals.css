@@ -64,6 +64,7 @@ body {
 }
 
 main {
-  @apply bg-[var(--light)] 
+  @apply min-h-screen 
+  bg-[var(--light)] 
   dark:bg-[var(--dark)];
 }
